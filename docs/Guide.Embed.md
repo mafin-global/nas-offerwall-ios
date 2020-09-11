@@ -233,6 +233,17 @@ NAS_WALL_SEX sex = NAS_WALL_SEX_MALE; // 성별 (NAS_WALL_SEX_UNKNOWN=성별정�
 [NASWall embedWallWithParent:PARENT userData:@"USER_DATA"];
 ```
 
+***타겟팅 광고 노출 방법***
+    
+기본적으로 오퍼월에는 타겟팅 광고는 노출되지 않습니다.
+사용자의 `연령` 또는 `성별` 정보가 있는 경우, 아래와 같은 방법으로 타겟팅 광고를 노출시킬 수 있습니다.
+
+```
+int age = 20; // 연령 (연령 정보가 없을 경우 0 으로 설정)
+NAS_WALL_SEX sex = NAS_WALL_SEX_MALE; // 성별 (NAS_WALL_SEX_UNKNOWN=성별정보없음, NAS_WALL_SEX_MALE=남자, NAS_WALL_SEX_FEMALE=여자)
+[NASWall embedWallWithParent:PARENT userData:@"USER_DATA" age:age sex:sex];
+```
+
 ### `적립금 조회` _(NAS 서버에서 적립금 관리 시 사용)_
 NASWall 클래스의 `getUserPoint` 함수를 호출하여 사용자 적립금을 조회할 수 있습니다.
 

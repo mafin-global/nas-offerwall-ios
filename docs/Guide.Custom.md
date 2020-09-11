@@ -337,8 +337,8 @@ SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전�
 - #### 광고 목록 가져오기 실패 (NASWallGetAdListError)
     광고 목록 가져오기가 실패했을 때 발생하는 이벤트
     - `errorCode` : 오류 코드
-        - `-99999` : 파라메터 오류<br/>
-        - `-30001` : 콜백 URL이 등록되지 않았음. 앱 설정에서 콜백 URL을 등록해야함. (개발자 서버에서 적립금을 관리하는 경우)<br/>
+        - `-99999` : 파라메터 오류
+        - `-30001` : 콜백 URL이 등록되지 않았음. 앱 설정에서 콜백 URL을 등록해야함. (개발자 서버에서 적립금을 관리하는 경우)
         - `그외` : 기타 오류
     ```
     - (void)NASWallGetAdListError:(int)errorCode
@@ -358,8 +358,8 @@ SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전�
     광고 참여에 실패했을 때 발생하는 이벤트
     - `adInfo` : 참여 광고 정보
     - `errorCode` : 오류 코드
-        - `-11` : `NAS 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정하지 않았음 (초기화 시 사용자 ID를 지정해야함)<br/>
-        - `-12` : `개발자 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정했음 (초기화 시 사용자 ID를 지정하지 말아야함)<br/>
+        - `-11` : `NAS 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정하지 않았음 (초기화 시 사용자 ID를 지정해야함)
+        - `-12` : `개발자 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정했음 (초기화 시 사용자 ID를 지정하지 말아야함)
         - `-10001` : 광고 종료됨
         - `-20001` : 이미 참여 완료한 광고
         - `-99999` : 파라메터 오류
@@ -379,7 +379,7 @@ SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전�
     광고 참여 URL 실행에 실패했을 때 발생하는 이벤트
     - `url` : 광고 참여 URL
     - `errorCode` : 오류 코드
-        - `-1` : URL을 실행할 수 없음<br/>
+        - `-1` : URL을 실행할 수 없음
         - `그외` : 기타 오류
     ```
     - (void)NASWallOpenUrlError:(NSString*)url errorCode:(int)errorCode
@@ -406,7 +406,7 @@ SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전�
     광고 참여 설명글 가져오기가 실패했을 때 발생하는 이벤트
     - `adInfo` : 광고 정보
     - `errorCode` : 오류 코드
-        - `-1` : 없는 캠페인<br/>
+        - `-1` : 없는 캠페인
         - `그외` : 기타 오류
     ```
     - (void)NASWallGetAdDescriptionError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode
@@ -454,9 +454,9 @@ SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전�
 - #### 아이템 구매 실패 (NASWallPurchaseItemError)
     아이템 구매가 실패했을 때 발생하는 이벤트입니다.
     - `errorCode` : 오류 코드
-        - `-10` : 잘못된 앱 KEY<br/>
-        - `-11` : 잘못된 아이템 ID<br/>
-        - `-12` : 잘못된 구매 수량<br/>
+        - `-10` : 잘못된 앱 KEY
+        - `-11` : 잘못된 아이템 ID
+        - `-12` : 잘못된 구매 수량
         - `그외` : 기타 오류
     ```
     - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
