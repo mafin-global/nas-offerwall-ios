@@ -9,11 +9,12 @@
 `개발자 정의 UI`를 사용 하려면, [📖 개발자 정의 UI 개발 가이드](Guide.Custom.md) 문서를 참고해 주시기 랍니다.
 
 ## 📝 업데이트
-- [`2020년 3월 31일`](Update.md#2020-3-31)
+- [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
-- [`2020년 1월 30일`](Update.md#2020-1-30---_-ui_) - _내장 UI_
+- [`2020년 1월 30일`](Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
     - foreground 시 새로고침되지 않는 버그 수정
-- [`2020년 1월 28일`](Update.md#2020-1-28---_-ui_) - _내장 UI_
+- [`2020년 1월 28일`](Update.md#2020년-1월-28일---내장-ui) - _내장 UI_
+    - 환경에 따라 오퍼월이 보이지 않는 현상 수정
 - [전체 업데이트 목록 보기](Update.md)
 
 ## 개발자 등록
@@ -124,37 +125,29 @@ AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 오퍼월을 사용하기 앞서 `초기화 함수`를 먼저 호출합니다.
 
 - ***개발자 서버에서 적립금 관리 시 사용***
-    >    - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
-    >
-    >    - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
-    >
-    >    - `userId` : 사용자를 구분하기 위한 ID입니다. NAS 서버에서 `사용자 ID` 별로 적립금이 쌓이기 때문에 사용자별로 고유한 값을 입력해야합니다.
-    >
-    >    - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
-    >
-    > ```
-    > - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    > {
-    >     [NASWall initWithAppKey:@"앱KEY" testMode:NO userId:@"사용자ID" delegate:self];
-    >     ...
-    > }
-    > 
-    > ```
+    > - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
+    > - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
+    > - `userId` : 사용자를 구분하기 위한 ID입니다. NAS 서버에서 `사용자 ID` 별로 적립금이 쌓이기 때문에 사용자별로 고유한 값을 입력해야합니다.
+    > - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
+    ```
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+        [NASWall initWithAppKey:@"앱KEY" testMode:NO userId:@"사용자ID" delegate:self];
+        ...
+    }
+    ```
  
 - ***NAS 서버에서 적립금 관리 시 사용***
-    >    - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
-    >
-    >    - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
-    >
-    >    - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
-    >
-    > ```
-    > - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    > {
-    >     [NASWall initWithAppKey:@"앱KEY" testMode:testMode delegate:self];
-    >     ...
-    > }
-    > ```
+    > - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
+    > - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
+    > - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
+    ```
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+        [NASWall initWithAppKey:@"앱KEY" testMode:testMode delegate:self];
+        ...
+    }
+    ```
 
 ### `추가 설정`
 `AppDelegate` 클래스의 `applicationDidEnterBackground`, `applicationWilEnterForeground` 함수에 다음 코드를 추가합니다.
@@ -163,11 +156,13 @@ AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     [NASWall applicationDidEnterBackground];
+    ...
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     [NASWall applicationWillEnterForeground];
+    ...
 }
 ```
 
@@ -235,57 +230,61 @@ NASWall 클래스의 `purchaseItem:(NSString*)itemId` 함수를 호출하여 아
 [NASWall purchaseItem:itemId];
 ```
 
-### `이벤트`
+### `이벤트 (공통)`
 SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전달됩니다.
 
-- ***개발자 서버에서 적립금 관리 시 이벤트***
-    > - `오퍼월 종료` : 사용자가 사용자가 닫기 버튼을 눌러서 오퍼월이 닫혔을 때 발생하는 이벤트
-    >
-    > ```
-    > - (void)NASWallClose;
-    > ```
+- #### 오퍼월 종료 (NASWallClose)
+    사용자가 사용자가 닫기 버튼을 눌러서 오퍼월이 닫혔을 때 발생하는 이벤트
+    ```
+    - (void)NASWallClose;
+    ```
   
-- ***NAS 서버에서 적립금 관리 시 이벤트***
-    > - `적립금 조회 성공` : 적립금 조회가 성공했을 때 발생하는 이벤트
-    >   - `point` : 적립 금액
-    >   - `unit` : 적립 금액 단위
-    >   ```
-    >   - (void)NASWallGetUserPointSuccess:(int)point unit:(NSString*)unit;
-    >   ```
-    >   
-    > - `적립금 조회 실패` : 적립금 조회가 실패했을 때 발생하는 이벤트
-    >   - `errorCode` : 오류 코드
-    >       > `-10` : 잘못된 앱 KEY<br/>
-            `-100` :  개발자 서버에서 적립금을 관리하는 경우는 사용할 수 없음<br/>
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallGetUserPointError:(int)errorCode;
-    >   ```
-    >   
-    > - `아이템 구매 성공` : 아이템 구매가 성공했을 때 발생하는 이벤트
-    >   - `itemId` : 구매 아이템 ID
-    >   - `count` : 구매 수량
-    >   - `point` : 구매 후 남은 적립 금액
-    >   - `unit` : 적립 금액 단위
-    >
-    >   ```
-    >   - (void)NASWallPurchaseItemSuccess:(NSString*)itemId count:(int)count point:(int)point unit:(NSString*)unit;
-    >   ```
-    >   
-    > - `아이템 구매 적립금 부족` : 아이템 구매 시 적립금이 부족할 때 발생하는 이벤트
-    >   - `itemId` : 구매 아이템 ID
-    >   - `count` : 구매 수량
-    >
-    >   ```
-    >   - (void)NASWallPurchaseItemNotEnoughPoint:(NSString*)itemId count:(int)count;
-    >   ```
-    >   
-    > - `아이템 구매 실패` : 아이템 구매가 실패했을 때 발생하는 이벤트입니다.
-    >   - `errorCode` : 오류 코드
-    >       > `-10` : 잘못된 앱 KEY<br/>
-            `-11` : 잘못된 아이템 ID<br/>
-            `-12` : 잘못된 구매 수량<br/>
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
-    >   ```
+### `이벤트 (NAS 서버에서 적립금 관리 시 사용)`
+이 이벤트는 NAS 서버에서 적립금 관리 시에 사용하는 이벤트입니다.
+
+- #### 적립금 조회 성공 (NASWallGetUserPointSuccess)
+    적립금 조회가 성공했을 때 발생하는 이벤트
+    > - `point` : 적립 금액
+    > - `unit` : 적립 금액 단위
+    ```
+    - (void)NASWallGetUserPointSuccess:(int)point unit:(NSString*)unit;
+    ```
+    
+- #### 적립금 조회 실패 (NASWallGetUserPointError)
+    적립금 조회가 실패했을 때 발생하는 이벤트
+    > - `errorCode` : 오류 코드
+    >   - `-10` : 잘못된 앱 KEY<br/>
+    >   - `-100` :  개발자 서버에서 적립금을 관리하는 경우는 사용할 수 없음<br/>
+    >   - `그외` : 기타 오류
+    ```
+    - (void)NASWallGetUserPointError:(int)errorCode;
+    ```
+
+- #### 아이템 구매 성공 (NASWallPurchaseItemSuccess)
+    아이템 구매가 성공했을 때 발생하는 이벤트
+    > - `itemId` : 구매 아이템 ID
+    > - `count` : 구매 수량
+    > - `point` : 구매 후 남은 적립 금액
+    > - `unit` : 적립 금액 단위
+    ```
+    - (void)NASWallPurchaseItemSuccess:(NSString*)itemId count:(int)count point:(int)point unit:(NSString*)unit;
+    ```
+
+- #### 아이템 구매 적립금 부족 (NASWallPurchaseItemNotEnoughPoint)
+    아이템 구매 시 적립금이 부족할 때 발생하는 이벤트
+    > - `itemId` : 구매 아이템 ID
+    > - `count` : 구매 수량
+    ```
+    - (void)NASWallPurchaseItemNotEnoughPoint:(NSString*)itemId count:(int)count;
+    ```
+    
+- #### 아이템 구매 실패 (NASWallPurchaseItemError)
+    아이템 구매가 실패했을 때 발생하는 이벤트입니다.
+    > - `errorCode` : 오류 코드
+    >   - `-10` : 잘못된 앱 KEY<br/>
+    >   - `-11` : 잘못된 아이템 ID<br/>
+    >   - `-12` : 잘못된 구매 수량<br/>
+    >   - `그외` : 기타 오류
+    ```
+    - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
+    ```

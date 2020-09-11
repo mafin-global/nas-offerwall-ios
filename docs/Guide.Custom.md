@@ -9,11 +9,11 @@
 `내장 UI`를 사용 하려면, [📖 내장 UI 개발 가이드](Guide.Embed.md) 문서를 참고해 주시기 랍니다.
 
 ## 📝 업데이트
-- [`2020년 3월 31일`](Update.md#2020-3-31)
+- [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
-- [`2020년 1월 30일`](Update.md#2020-1-30---_-ui_) - _내장 UI_
+- [`2020년 1월 30일`](Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
     - foreground 시 새로고침되지 않는 버그 수정
-- [`2020년 1월 28일`](Update.md#2020-1-28---_-ui_) - _내장 UI_
+- [`2020년 1월 28일`](Update.md#2020년-1월-28일---내장-ui) - _내장 UI_
     - 환경에 따라 오퍼월이 보이지 않는 현상 수정
 - [전체 업데이트 목록 보기](Update.md)
 
@@ -133,37 +133,29 @@ AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 오퍼월을 사용하기 앞서 `초기화 함수`를 먼저 호출합니다.
 
 - ***개발자 서버에서 적립금 관리 시 사용***
-    >    - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
-    >
-    >    - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
-    >
-    >    - `userId` : 사용자를 구분하기 위한 ID입니다. NAS 서버에서 `사용자 ID` 별로 적립금이 쌓이기 때문에 사용자별로 고유한 값을 입력해야합니다.
-    >
-    >    - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
-    >
-    > ```
-    > - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    > {
-    >     [NASWall initWithAppKey:@"앱KEY" testMode:NO userId:@"사용자ID" delegate:self];
-    >     ...
-    > }
-    > 
-    > ```
+    > - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
+    > - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
+    > - `userId` : 사용자를 구분하기 위한 ID입니다. NAS 서버에서 `사용자 ID` 별로 적립금이 쌓이기 때문에 사용자별로 고유한 값을 입력해야합니다.
+    > - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
+    ```
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+        [NASWall initWithAppKey:@"앱KEY" testMode:NO userId:@"사용자ID" delegate:self];
+        ...
+    }
+    ```
  
 - ***NAS 서버에서 적립금 관리 시 사용***
-    >    - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
-    >
-    >    - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
-    >
-    >    - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
-    >
-    > ```
-    > - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    > {
-    >     [NASWall initWithAppKey:@"앱KEY" testMode:testMode delegate:self];
-    >     ...
-    > }
-    > ```
+    > - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
+    > - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
+    > - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
+    ```
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+        [NASWall initWithAppKey:@"앱KEY" testMode:testMode delegate:self];
+        ...
+    }
+    ```
 
 ### `추가 설정`
 `AppDelegate` 클래스의 `applicationDidEnterBackground`, `applicationWilEnterForeground` 함수에 다음 코드를 추가합니다.
@@ -172,11 +164,13 @@ AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     [NASWall applicationDidEnterBackground];
+    ...
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     [NASWall applicationWillEnterForeground];
+    ...
 }
 ```
 
@@ -282,139 +276,152 @@ NASWall 클래스의 `purchaseItem:(NSString*)itemId` 함수를 호출하여 아
 [NASWall purchaseItem:itemId];
 ```
 
-### `이벤트`
+### `이벤트 (공통)`
 SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전달됩니다.
 
-- ***공통 이벤트***
-    > - `광고 목록 가져오기 성공` : 광고 목록 가져오기가 성공했을 때 발생하는 이벤트
-    >   - `adList` : 광고 목록 (`NASWallAdInfo`의 배열)
-    >   ```
-    >   - (void)NASWallGetAdListSuccess:(NSArray*)adList
-    >   {
-    >       for (NASWallAdInfo adInfo : adList)
-    >       {
-    >           NSString *title = adInfo.title; //광고명
-    >           NSString *iconUrl = adInfo.iconUrl; //아이콘 Url
-    >           NSString *missionText = adInfo.missionText; //참여방법
-    >           NSString *adPrice = adInfo.adPrice; //참여비용
-    >           int rewardPrice = adInfo.rewardPrice; //적립금
-    >           NSString *rewardUnit = adInfo.rewardUnit; //적립금단위
-    >       }
-    >   }
-    >   ```
-    >   
-    > - `광고 목록 가져오기 실패` : 광고 목록 가져오기가 실패했을 때 발생하는 이벤트
-    >   - `errorCode` : 오류 코드
-    >       > `-99999` : 파라메터 오류<br/>
-            `-30001` : 콜백 URL이 등록되지 않았음. 앱 설정에서 콜백 URL을 등록해야함. (개발자 서버에서 적립금을 관리하는 경우)<br/>
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallGetAdListError:(int)errorCode
-    >   ```
-    >   
-    > - `광고 참여 성공` : 광고 참여에 성공했을 때 발생하는 이벤트. 광고 참여 URL을 실행해야 합니다.
-    >   - `adInfo` : 참여 광고 정보
-    >   - `url` : 광고 참여 URL
-    >   ```
-    >   - (void)NASWallJoinAdSuccess:(NASWallAdInfo*)adInfo url:(NSString*)url
-    >   {
-    >       [NASWall openUrl:url];
-    >   }
-    >   ```
-    >   
-    > - `광고 참여 실패` : 광고 참여에 실패했을 때 발생하는 이벤트
-    >   - `adInfo` : 참여 광고 정보
-    >   - `errorCode` : 오류 코드
-    >       > `-11` : `NAS 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정하지 않았음 (초기화 시 사용자 ID를 지정해야함)<br/>
-            `-12` : `개발자 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정했음 (초기화 시 사용자 ID를 지정하지 말아야함)<br/>
-            `-10001` : 광고 종료됨
-            `-20001` : 이미 참여 완료한 광고
-            `-99999` : 파라메터 오류
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallJoinAdError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode
-    >   ```
-    >   
-    > - `광고 참여 URL 실행 성공` : 광고 참여 URL 실행에 성공 했을 때 발생하는 이벤트
-    >   - `url` : 광고 참여 URL
-    >   ```
-    >   - (void)NASWallOpenUrlSuccess:(NSString*)url
-    >   ```
-    >   
-    > - `광고 참여 URL 실행 실패` : 광고 참여 URL 실행에 실패했을 때 발생하는 이벤트
-    >   - `url` : 광고 참여 URL
-    >   - `errorCode` : 오류 코드
-    >       > `-1` : URL을 실행할 수 없음<br/>
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallOpenUrlError:(NSString*)url errorCode:(int)errorCode
-    >   ```
-    >   
-    > - `광고 목록 다시 가져오기 요청` : 광고 목록을 다시 가져와야 할 때 발생하는 이벤트. 이 이벤트가 발생하면 반드시 광고 목록을 다시 가져와야 합니다.
-    >   ```
-    >   - (void)NASWallMustRefreshAdList
-    >   {
-    >       [NASWall getAdList:USER_DATA];
-    >   }
-    >   ```
-    >   
-    > - `광고 상세 설명글 성공` : 광고 참여 설명글 가져오기가 성공했을 때 발생하는 이벤트
-    >   - `adInfo` : 광고 정보
-    >   - `description` : 광고 상세 설명글
-    >   ```
-    >   - (void)NASWallGetAdDescriptionSuccess:(NASWallAdInfo*)adInfo description:(NSString*)description
-    >   ```
-    >   
-    > - `광고 상세 설명글 실패` : 광고 참여 설명글 가져오기가 실패했을 때 발생하는 이벤트
-    >   - `adInfo` : 광고 정보
-    >   - `errorCode` : 오류 코드
-    >       > `-1` : 없는 캠페인<br/>
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallGetAdDescriptionError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode
-    >   ```
-  
-- ***NAS 서버에서 적립금 관리 시 이벤트***
-    > - `적립금 조회 성공` : 적립금 조회가 성공했을 때 발생하는 이벤트
-    >   - `point` : 적립 금액
-    >   - `unit` : 적립 금액 단위
-    >   ```
-    >   - (void)NASWallGetUserPointSuccess:(int)point unit:(NSString*)unit;
-    >   ```
-    >   
-    > - `적립금 조회 실패` : 적립금 조회가 실패했을 때 발생하는 이벤트
-    >   - `errorCode` : 오류 코드
-    >       > `-10` : 잘못된 앱 KEY<br/>
-            `-100` :  개발자 서버에서 적립금을 관리하는 경우는 사용할 수 없음<br/>
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallGetUserPointError:(int)errorCode;
-    >   ```
-    >   
-    > - `아이템 구매 성공` : 아이템 구매가 성공했을 때 발생하는 이벤트
-    >   - `itemId` : 구매 아이템 ID
-    >   - `count` : 구매 수량
-    >   - `point` : 구매 후 남은 적립 금액
-    >   - `unit` : 적립 금액 단위
-    >
-    >   ```
-    >   - (void)NASWallPurchaseItemSuccess:(NSString*)itemId count:(int)count point:(int)point unit:(NSString*)unit;
-    >   ```
-    >   
-    > - `아이템 구매 적립금 부족` : 아이템 구매 시 적립금이 부족할 때 발생하는 이벤트
-    >   - `itemId` : 구매 아이템 ID
-    >   - `count` : 구매 수량
-    >
-    >   ```
-    >   - (void)NASWallPurchaseItemNotEnoughPoint:(NSString*)itemId count:(int)count;
-    >   ```
-    >   
-    > - `아이템 구매 실패` : 아이템 구매가 실패했을 때 발생하는 이벤트입니다.
-    >   - `errorCode` : 오류 코드
-    >       > `-10` : 잘못된 앱 KEY<br/>
-            `-11` : 잘못된 아이템 ID<br/>
-            `-12` : 잘못된 구매 수량<br/>
-            `그외` : 기타 오류
-    >   ```
-    >   - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
-    >   ```
+- #### 광고 목록 가져오기 성공 (NASWallGetAdListSuccess)
+    광고 목록 가져오기가 성공했을 때 발생하는 이벤트
+    > - `adList` : 광고 목록 (`NASWallAdInfo`의 배열)
+    
+    ```
+    - (void)NASWallGetAdListSuccess:(NSArray*)adList
+    {
+        for (NASWallAdInfo adInfo : adList)
+        {
+            NSString *title = adInfo.title; //광고명
+            NSString *iconUrl = adInfo.iconUrl; //아이콘 Url
+            NSString *missionText = adInfo.missionText; //참여방법
+            NSString *adPrice = adInfo.adPrice; //참여비용
+            int rewardPrice = adInfo.rewardPrice; //적립금
+            NSString *rewardUnit = adInfo.rewardUnit; //적립금단위
+        }
+    }
+    ```
+
+- #### 광고 목록 가져오기 실패 (NASWallGetAdListError)
+    광고 목록 가져오기가 실패했을 때 발생하는 이벤트
+    > - `errorCode` : 오류 코드
+    >    - `-99999` : 파라메터 오류<br/>
+    >    - `-30001` : 콜백 URL이 등록되지 않았음. 앱 설정에서 콜백 URL을 등록해야함. (개발자 서버에서 적립금을 관리하는 경우)<br/>
+    >    - `그외` : 기타 오류
+    ```
+    - (void)NASWallGetAdListError:(int)errorCode
+    ```
+
+- #### 광고 참여 성공 (NASWallJoinAdSuccess)
+    광고 참여에 성공했을 때 발생하는 이벤트. 광고 참여 URL을 실행해야 합니다.
+    > - `adInfo` : 참여 광고 정보
+    > - `url` : 광고 참여 URL
+    ```
+    - (void)NASWallJoinAdSuccess:(NASWallAdInfo*)adInfo url:(NSString*)url
+    {
+        [NASWall openUrl:url];
+    }
+    ```
+- #### 광고 참여 실패 (NASWallJoinAdError)
+    광고 참여에 실패했을 때 발생하는 이벤트
+    > - `adInfo` : 참여 광고 정보
+    > - `errorCode` : 오류 코드
+    >   - `-11` : `NAS 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정하지 않았음 (초기화 시 사용자 ID를 지정해야함)<br/>
+    >   - `-12` : `개발자 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정했음 (초기화 시 사용자 ID를 지정하지 말아야함)<br/>
+    >   - `-10001` : 광고 종료됨
+    >   - `-20001` : 이미 참여 완료한 광고
+    >   - `-99999` : 파라메터 오류
+    >   -`그외` : 기타 오류
+    ```
+    - (void)NASWallJoinAdError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode
+    ```
+
+- #### 광고 참여 URL 실행 성공 (NASWallOpenUrlSuccess)
+    광고 참여 URL 실행에 성공 했을 때 발생하는 이벤트
+    > - `url` : 광고 참여 URL
+    ```
+    - (void)NASWallOpenUrlSuccess:(NSString*)url
+    ```
+    
+- #### 광고 참여 URL 실행 실패 (NASWallOpenUrlError)
+    광고 참여 URL 실행에 실패했을 때 발생하는 이벤트
+    > - `url` : 광고 참여 URL
+    > - `errorCode` : 오류 코드
+    >   - `-1` : URL을 실행할 수 없음<br/>
+    >   - `그외` : 기타 오류
+    ```
+    - (void)NASWallOpenUrlError:(NSString*)url errorCode:(int)errorCode
+    ```
+
+- #### 광고 목록 다시 가져오기 요청 (NASWallMustRefreshAdList)
+    광고 목록을 다시 가져와야 할 때 발생하는 이벤트. 이 이벤트가 발생하면 반드시 광고 목록을 다시 가져와야 합니다.
+    ```
+    - (void)NASWallMustRefreshAdList
+    {
+        [NASWall getAdList:USER_DATA];
+    }
+    ```
+    
+- #### 광고 상세 설명글 성공 (NASWallGetAdDescriptionSuccess)
+    광고 참여 설명글 가져오기가 성공했을 때 발생하는 이벤트
+    > - `adInfo` : 광고 정보
+    > - `description` : 광고 상세 설명글
+    ```
+    - (void)NASWallGetAdDescriptionSuccess:(NASWallAdInfo*)adInfo description:(NSString*)description
+    ```
+    
+- #### 광고 상세 설명글 실패 (NASWallGetAdDescriptionError)
+    광고 참여 설명글 가져오기가 실패했을 때 발생하는 이벤트
+    > - `adInfo` : 광고 정보
+    > - `errorCode` : 오류 코드
+    >   - `-1` : 없는 캠페인<br/>
+    >   - `그외` : 기타 오류
+    ```
+    - (void)NASWallGetAdDescriptionError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode
+    ```
+
+### `이벤트 (NAS 서버에서 적립금 관리 시 사용)`
+이 이벤트는 NAS 서버에서 적립금 관리 시에 사용하는 이벤트입니다.
+
+- #### 적립금 조회 성공 (NASWallGetUserPointSuccess)
+    적립금 조회가 성공했을 때 발생하는 이벤트
+    > - `point` : 적립 금액
+    > - `unit` : 적립 금액 단위
+    ```
+    - (void)NASWallGetUserPointSuccess:(int)point unit:(NSString*)unit;
+    ```
+    
+- #### 적립금 조회 실패 (NASWallGetUserPointError)
+    적립금 조회가 실패했을 때 발생하는 이벤트
+    > - `errorCode` : 오류 코드
+    >   - `-10` : 잘못된 앱 KEY<br/>
+    >   - `-100` :  개발자 서버에서 적립금을 관리하는 경우는 사용할 수 없음<br/>
+    >   - `그외` : 기타 오류
+    ```
+    - (void)NASWallGetUserPointError:(int)errorCode;
+    ```
+
+- #### 아이템 구매 성공 (NASWallPurchaseItemSuccess)
+    아이템 구매가 성공했을 때 발생하는 이벤트
+    > - `itemId` : 구매 아이템 ID
+    > - `count` : 구매 수량
+    > - `point` : 구매 후 남은 적립 금액
+    > - `unit` : 적립 금액 단위
+    ```
+    - (void)NASWallPurchaseItemSuccess:(NSString*)itemId count:(int)count point:(int)point unit:(NSString*)unit;
+    ```
+
+- #### 아이템 구매 적립금 부족 (NASWallPurchaseItemNotEnoughPoint)
+    아이템 구매 시 적립금이 부족할 때 발생하는 이벤트
+    > - `itemId` : 구매 아이템 ID
+    > - `count` : 구매 수량
+    ```
+    - (void)NASWallPurchaseItemNotEnoughPoint:(NSString*)itemId count:(int)count;
+    ```
+    
+- #### 아이템 구매 실패 (NASWallPurchaseItemError)
+    아이템 구매가 실패했을 때 발생하는 이벤트입니다.
+    > - `errorCode` : 오류 코드
+    >   - `-10` : 잘못된 앱 KEY<br/>
+    >   - `-11` : 잘못된 아이템 ID<br/>
+    >   - `-12` : 잘못된 구매 수량<br/>
+    >   - `그외` : 기타 오류
+    ```
+    - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
+    ```
