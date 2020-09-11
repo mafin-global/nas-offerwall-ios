@@ -18,6 +18,5 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 - [`/sdk`](sdk) : 최종 릴리즈 SDK 파일
     - [`libNASWall_xxxxxxxx.a`](sdk/libNASWall_20200331.a) : SDK 라이브러리 파일
     - [`NASWall.h`](sdk/NASWall.h) : SDK 헤더 파일
-- [`/NASWallExample.xcodeproj`](NASWallExample.xcodeproj) : 예제 프로그램 XCode 프로젝트 파일
-- [`/ANSWallExample`](NASWallExample) : 예제 프로그램 소스
+- [`/example`](example) : 예제 소스
 
