@@ -7,10 +7,10 @@
 //
 
 #warning APP_KEY, TEST_MODE, USER_DATA 값을 설정하세요.
-static NSString *APP_KEY = @"";
+  static NSString *APP_KEY = @"";
 static BOOL TEST_MODE = NO;
 static NSString *USER_DATA = @"test_user_data";
 
-#warning NAS 서버에서 포인트를 관리하는 경우에 USER_ID, ITEM_ID 값을 설정하세요.
+#warning NAS 서버에서 적립금을 관리하는 경우에 USER_ID, ITEM_ID 값을 설정하세요.
 static NSString *USER_ID = @"";
 static NSString *ITEM_ID = @"";

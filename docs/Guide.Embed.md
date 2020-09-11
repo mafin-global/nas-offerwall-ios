@@ -8,6 +8,32 @@
 
 `개발자 정의 UI`를 사용 하려면, [📖 개발자 정의 UI 개발 가이드](Guide.Custom.md) 문서를 참고해 주시기 랍니다.
 
+## 목차
+- [📝 업데이트](#업데이트)
+- [👤️ 개발자 등록](#개발자-등록)
+- [🎲️ 매체 등록](#매체-등록)
+    - [적립금 관리 서버](#적립금-관리-서버)
+    - [리워드 금액 단위](#리워드-금액-단위)
+    - [리워드 금액 비율](#리워드-금액-비율)
+    - [콜백 URL 등록](#콜백-url-등록-개발자-서버에서-적립금-관리-시-사용) _(개발자 서버에서 적립금 관리 시 사용)_
+    - [아이템 등록](#아이템-등록-nas-서버에서-적립금-관리-시-사용) _(NAS 서버에서 적립금 관리 시 사용)_
+- [🚀 SDK 연동](#sdk-연동)
+    - [라이브러리 추가](#라이브러리-추가)
+    - [초기화](#초기화)
+    - [추가 설정](#추가-설정)
+    - [팝업 오퍼월 띄우기](#팝업-오퍼월-띄우기)
+    - [임베드 오퍼월 삽입](#임베드-오퍼월-삽입)
+    - [적립금 조회](#적립금-조회-nas-서버에서-적립금-관리-시-사용) _(NAS 서버에서 적립금 관리 시 사용)_
+    - [적립금 사용 (아이템 구매)](#적립금-사용-아이템-구매-nas-서버에서-적립금-관리-시-사용) _(NAS 서버에서 적립금 관리 시 사용)_
+    - [이벤트](#이벤트-공통) _(공통)_
+        - [오퍼월 종료 (NASWallClose)](#오퍼월-종료-naswallclose)
+    - [이벤트](#이벤트-nas-서버에서-적립금-관리-시-사용) _(NAS 서버에서 적립금 관리 시 사용)_
+        - [적립금 조회 성공 (NASWallGetUserPointSuccess)](#적립금-조회-성공-naswallgetuserpointsuccess)
+        - [적립금 조회 실패 (NASWallGetUserPointError)](#적립금-조회-실패-naswallgetuserpointerror)
+        - [아이템 구매 성공 (NASWallPurchaseItemSuccess)](#아이템-구매-성공-naswallpurchaseitemsuccess)
+        - [아이템 구매 적립금 부족 (NASWallPurchaseItemNotEnoughPoint)](#아이템-구매-적립금-부족-naswallpurchaseitemnotenoughpoint)
+        - [아이템 구매 실패 (NASWallPurchaseItemError)](#아이템-구매-실패-naswallpurchaseitemerror)
+
 ## 📝 업데이트
 - [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
@@ -17,12 +43,12 @@
     - 환경에 따라 오퍼월이 보이지 않는 현상 수정
 - [전체 업데이트 목록 보기](Update.md)
 
-## 개발자 등록
+## 👤️ 개발자 등록
 NAS 오퍼월 연동을 위해서는 먼저 개발자 등록을 해야합니다.
 
 [NAS 홈페이지](http://www.appang.kr/nas) 에 접속하여 `회원가입` 버튼을 눌러 가입합니다.
 
-## 매체 등록
+## 🎲 매체 등록
 NAS 오퍼월 연동을 위해서는 연동할 매체 등록 해야합니다.
 
 [NAS 홈페이지](http://www.appang.kr/nas) 에 로그인 후 `신규매체 등록` 버튼을 눌러 매체를 등록합니다.
@@ -106,7 +132,7 @@ http://server.kr/callback.asp?sid=[SEQ_ID]&ud=[USER_DATA]&p=[PRICE]&r=[REWARD]&a
 `아이템 ID`는 SDK의 `아이템 구매 함수`를 호출할 때 필요한 값입니다.
 등록된 아이템 정보는 `수정` 버튼을 눌러 언제든지 변경할 수 있습니다.
 
-## SDK 연동
+## 🚀 SDK 연동
 
 ### `라이브러리 추가`
 `/sdk` 폴더의 `libNASWall.a`, `NASWall.h` 파일을 프로젝트에 추가합니다.
@@ -230,7 +256,7 @@ NASWall 클래스의 `purchaseItem:(NSString*)itemId` 함수를 호출하여 아
 [NASWall purchaseItem:itemId];
 ```
 
-### `이벤트 (공통)`
+### `이벤트` _(공통)_
 SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전달됩니다.
 
 - #### 오퍼월 종료 (NASWallClose)
@@ -239,52 +265,52 @@ SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전�
     - (void)NASWallClose;
     ```
   
-### `이벤트 (NAS 서버에서 적립금 관리 시 사용)`
+### `이벤트` _(NAS 서버에서 적립금 관리 시 사용)_
 이 이벤트는 NAS 서버에서 적립금 관리 시에 사용하는 이벤트입니다.
 
 - #### 적립금 조회 성공 (NASWallGetUserPointSuccess)
     적립금 조회가 성공했을 때 발생하는 이벤트
-    > - `point` : 적립 금액
-    > - `unit` : 적립 금액 단위
+    - `point` : 적립 금액
+    - `unit` : 적립 금액 단위
     ```
     - (void)NASWallGetUserPointSuccess:(int)point unit:(NSString*)unit;
     ```
     
 - #### 적립금 조회 실패 (NASWallGetUserPointError)
     적립금 조회가 실패했을 때 발생하는 이벤트
-    > - `errorCode` : 오류 코드
-    >   - `-10` : 잘못된 앱 KEY<br/>
-    >   - `-100` :  개발자 서버에서 적립금을 관리하는 경우는 사용할 수 없음<br/>
-    >   - `그외` : 기타 오류
+    - `errorCode` : 오류 코드
+        - `-10` : 잘못된 앱 KEY<br/>
+        - `-100` :  개발자 서버에서 적립금을 관리하는 경우는 사용할 수 없음<br/>
+        - `그외` : 기타 오류
     ```
     - (void)NASWallGetUserPointError:(int)errorCode;
     ```
 
 - #### 아이템 구매 성공 (NASWallPurchaseItemSuccess)
     아이템 구매가 성공했을 때 발생하는 이벤트
-    > - `itemId` : 구매 아이템 ID
-    > - `count` : 구매 수량
-    > - `point` : 구매 후 남은 적립 금액
-    > - `unit` : 적립 금액 단위
+    - `itemId` : 구매 아이템 ID
+    - `count` : 구매 수량
+    - `point` : 구매 후 남은 적립 금액
+    - `unit` : 적립 금액 단위
     ```
     - (void)NASWallPurchaseItemSuccess:(NSString*)itemId count:(int)count point:(int)point unit:(NSString*)unit;
     ```
 
 - #### 아이템 구매 적립금 부족 (NASWallPurchaseItemNotEnoughPoint)
     아이템 구매 시 적립금이 부족할 때 발생하는 이벤트
-    > - `itemId` : 구매 아이템 ID
-    > - `count` : 구매 수량
+    - `itemId` : 구매 아이템 ID
+    - `count` : 구매 수량
     ```
     - (void)NASWallPurchaseItemNotEnoughPoint:(NSString*)itemId count:(int)count;
     ```
     
 - #### 아이템 구매 실패 (NASWallPurchaseItemError)
     아이템 구매가 실패했을 때 발생하는 이벤트입니다.
-    > - `errorCode` : 오류 코드
-    >   - `-10` : 잘못된 앱 KEY<br/>
-    >   - `-11` : 잘못된 아이템 ID<br/>
-    >   - `-12` : 잘못된 구매 수량<br/>
-    >   - `그외` : 기타 오류
+    - `errorCode` : 오류 코드
+        - `-10` : 잘못된 앱 KEY<br/>
+        - `-11` : 잘못된 아이템 ID<br/>
+        - `-12` : 잘못된 구매 수량<br/>
+        - `그외` : 기타 오류
     ```
     - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
     ```
