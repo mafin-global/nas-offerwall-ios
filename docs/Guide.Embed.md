@@ -9,12 +9,11 @@
 `개발자 정의 UI`를 사용 하려면, [📖 개발자 정의 UI 개발 가이드](Guide.Custom.md) 문서를 참고해 주시기 랍니다.
 
 ## 📝 업데이트
-- `2020년 3월 31일`
-    - 통신 관련 버그 수정<br/><br/>
-- `2020년 1월 30일` - _내장 UI_
-    - foreground 시 새로고침되지 않는 버그 수정<br/><br/>
-- `2020년 1월 28일` - _내장 UI_
-    - 환경에 따라 오퍼월이 보이지 않는 현상 수정<br/><br/>
+- [`2020년 3월 31일`](Update.md#2020-3-31)
+    - 통신 관련 버그 수정
+- [`2020년 1월 30일`](Update.md#2020-1-30---_-ui_) - _내장 UI_
+    - foreground 시 새로고침되지 않는 버그 수정
+- [`2020년 1월 28일`](Update.md#2020-1-28---_-ui_) - _내장 UI_
 - [전체 업데이트 목록 보기](Update.md)
 
 ## 개발자 등록
@@ -69,7 +68,9 @@ NAS 오퍼월 연동을 위해서는 연동할 매체 등록 해야합니다.
 - `[USER_ADID]` : 사용자 기기 36자리 광고 ID (Android : ADID, iOS : IDFA)
 - `[USER_IP]` : 사용자 IP 주소
 
-> 에시) `http://server.kr/callback.asp?sid=[SEQ_ID]&ud=[USER_DATA]&p=[PRICE]&r=[REWARD]&ai=[AD_ID]&ak=[AD_KEY]&n=[AD_NAME]&t=[AD_TYPE]&adid=[USER_ADID]&ip=[USER_IP]`
+```
+http://server.kr/callback.asp?sid=[SEQ_ID]&ud=[USER_DATA]&p=[PRICE]&r=[REWARD]&ai=[AD_ID]&ak=[AD_KEY]&n=[AD_NAME]&t=[AD_TYPE]&adid=[USER_ADID]&ip=[USER_IP]`
+```
 
 개발자 서버의 웹페이지가 `HTTP 200` 상태값을 리턴하면 `콜백 URL`을 더 이상 호출하지 않고 중지됩니다.
 만약 `HTTP 200` 이외의 상태값이 리턴되면 `최대 5번`까지 재시도하여 호출하고, `5번` 오류가 발생하면 더 이상 호출하지 않습니다.
