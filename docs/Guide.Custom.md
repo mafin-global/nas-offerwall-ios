@@ -38,7 +38,9 @@
         - [아이템 구매 성공 (NASWallPurchaseItemSuccess)](#아이템-구매-성공-naswallpurchaseitemsuccess)
         - [아이템 구매 적립금 부족 (NASWallPurchaseItemNotEnoughPoint)](#아이템-구매-적립금-부족-naswallpurchaseitemnotenoughpoint)
         - [아이템 구매 실패 (NASWallPurchaseItemError)](#아이템-구매-실패-naswallpurchaseitemerror)
-    
+- [📖⠀다른 문서](-다른-문서)
+- [🔗⠀다른 플렛폼 SDK](-다른-플렛폼-sdk)
+
 ## 📝 업데이트
 - [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
@@ -369,3 +371,11 @@ SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전�
     ```
     - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
     ```
+
+## 📖 다른 문서
+- [`내장 UI 개발 가이드`](Guide.Embed.md) : 미리 만들어진 UI를 사용하는 방식으로, 별도의 UI 개발 없이 쉽게 연동할 수 있습니다.
+- [`업데이트`](Update.md) : SDK 업데이트 정보를 제공합니다.
+
+## 🔗 다른 플렛폼 SDK
+- [`Android SDK`](https://github.com/mafin-global/nas-offerwall-android)
+- [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
