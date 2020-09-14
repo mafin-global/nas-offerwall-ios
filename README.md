@@ -1,6 +1,10 @@
 # NAS 오퍼월 iOS SDK 및 예제
 NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 
+***iOS 14 부터는 사용자 구분을 위해 사용하는 IDFA 값을 획득하기 위해 추적권한 요청이 필요힙니다.
+[여기](https://github.com/mafin-global/nas-offerwall-ios/tree/feature/ios14)
+에서 iOS 14 버전 테스트용 Beta SDK 및 예제를 확인할 수 있습니다.***
+
 ## 🔗 다른 플렛폼 SDK
 - [`Android SDK`](https://github.com/mafin-global/nas-offerwall-android)
 - [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
