@@ -6,12 +6,15 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 - [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
 
 ## 📝 업데이트
+- [`2020년 8월 21일`](docs/Update.md#2020년-8월-21일)
+    - iOS 14 지원을 위한 SDK 배포
+    - <font color="red">***!!! 이 SDK 는 iOS 14 버전 지원을 위한 테스트용 SDK 입니다. 상용 버전에 적용하면 안됩니다 !!!***</font>
+    - XCode12 Beta 버전에서 SDK 및 예제를 사용해야 오류가 발생하지 않습니다.
+    - [`SDK 연동 - 라이브러리 추가`](Guide.Embed.md#라이브러리-추가) 항목의 <font color="yellow">***노란색***</font>으로 표시된 항목을 추가 설정해주시기 바랍니다.
 - [`2020년 3월 31일`](docs/Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
 - [`2020년 1월 30일`](docs/Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
     - foreground 시 새로고침되지 않는 버그 수정
-- [`2020년 1월 28일`](docs/Update.md#2020년-1월-28일---내장-ui) - _내장 UI_
-    - 환경에 따라 오퍼월이 보이지 않는 현상 수정
 - [`전체 업데이트 목록 보기`](docs/Update.md)
 
 ## 📖 문서
