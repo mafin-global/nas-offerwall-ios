@@ -1,9 +1,11 @@
 # 📖 NAS 오퍼월 iOS SDK - 내장 UI 개발 가이드
 이 문서는 NAS 오퍼월 SDK 내장 UI 연동 가이드를 제공합니다.
 
-<font color="red">***이 SDK 는 iOS 14 버전 지원을 위한 테스트용 SDK 입니다. 사용 버전에 적용하지 마시기 바랍니다.***</font>
+***‼ 이 SDK 는 iOS 14 버전 지원을 위한 테스트용 SDK 입니다. 상용 버전에 적용하지 마세요 ‼***
 
-<font color="yellow">***XCode 12 Beta 버전에서 테스트해 주시기 바랍니다.***</font>
+***‼ XCode 12 Beta 버전에서 테스트해 주시기 바랍니다 ‼***
+
+***상용 버전을 사용하시려면, [여기](https://github.com/mafin-global/nas-offerwall-ios/blob/master/docs/Guide.Embed.md) 로 이동해주세요.***
 
 오퍼월 UI 표시 방식은 다음 두가지를 지원합니다.
 
@@ -37,9 +39,9 @@
 ## 📝 업데이트
 - [`2020년 8월 21일`](Update.md#2020년-8월-21일)
     - iOS 14 지원을 위한 SDK 배포
-    - <font color="red">***!!! 이 SDK 는 iOS 14 버전 지원을 위한 테스트용 SDK 입니다. 상용 버전에 적용하면 안됩니다 !!!***</font>
-    - XCode12 Beta 버전에서 SDK 및 예제를 사용해야 오류가 발생하지 않습니다.
-    - [`SDK 연동 - 라이브러리 추가`](#라이브러리-추가) 항목의 <font color="yellow">***노란색***</font>으로 표시된 항목을 추가 설정해주시기 바랍니다.
+    - ***‼ 이 SDK 는 iOS 14 버전 지원을 위한 테스트용 SDK 입니다. 상용 버전에 적용하지 마세요 ‼***
+    - XCode12 Beta 버전에서 SDK 및 예제를 테스트해야 오류가 발생하지 않습니다.
+    - 추가된 설정 내용은 [`SDK 연동 - 라이브러리 추가`](Guide.Embed.md#라이브러리-추가) 항목을 참고해주세요.
 - [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
 - [`2020년 1월 30일`](Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
@@ -56,18 +58,18 @@
 
 `프로젝트 설정` > `Build Phases` > `Link Binary With Libraries` 에서 다음 라이브러리를 추가합니다.
 
-<font color="yellow">iOS 14 부터는 사용자 구분을 위해 사용하는, IDFA 값을 획득하기 위해 추적권한 요청이 필요합니다.</font>
+***iOS 14 부터는 사용자 구분을 위해 사용하는, IDFA 값을 획득하기 위해 추적권한 요청이 필요합니다.***
 
 - libNASWall.a
 - AdSupport.framework
 - Security.framework
 - WebKit.framework
 - SystemConfiguration.framework
-- <font color="yellow">AppTrackingTransparency.framework</font>
+- ***AppTrackingTransparency.framework***
 
 AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 
-<font color="yellow">`Info.plist`에 `NSUserTrackingUsageDescription` 키를 추가한 후, 추적 권한 허용을 위한 사용자 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.</font>
+***`Info.plist`에 `NSUserTrackingUsageDescription` 키를 추가한 후, 추적 권한 허용을 위한 사용자 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.***
 
 ![](img/img_1.png)
 
