@@ -1,8 +1,6 @@
 # NAS 오퍼월 iOS SDK 및 예제
 NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 
-`Android SDK`는 [여기](https://github.com/mafin-global/nas-offerwall-android) 에서 제공합니다.
-
 ## 📝 업데이트
 - [`2020년 3월 31일`](docs/Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
@@ -22,3 +20,6 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
     - [`NASWall.h`](sdk/NASWall.h) : SDK 헤더 파일
 - [`/example`](example) : 예제 소스
 
+## 🔗 다른 플렛폼 SDK
+- [`Android SDK`](https://github.com/mafin-global/nas-offerwall-android)
+- [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
