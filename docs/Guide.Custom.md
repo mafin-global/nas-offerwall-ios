@@ -52,7 +52,7 @@
         >
         > ***XCode 12 이상 버전에서 사용해야 합니다.***
         >
-        > [XCode 12 GM 버전 다운로드](https://developer.apple.com/ios/submit/)
+        > ***[XCode 12 GM 버전 다운로드](https://developer.apple.com/ios/submit/)***
 - [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
 - [`2020년 1월 30일`](Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
@@ -85,7 +85,7 @@
 
 AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 
-> ***iOS 14 지원을 위한 추가 설정 (XCode 12 이상 버전)***
+> ***‼ iOS 14 지원을 위한 추가 설정 (XCode 12 이상 버전) ‼***
 >
 > - `프로젝트 설정` > `Build Phases` > `Link Binary With Libraries` 에서 다음 라이브러리를 추가합니다.
 >
