@@ -77,6 +77,7 @@ typedef enum {
 - (void)NASWallJoinAdError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode;
 - (void)NASWallOpenUrlSuccess:(NSString*)url;
 - (void)NASWallOpenUrlError:(NSString*)url errorCode:(int)errorCode;
+- (void)NASWallUserKeySuccess:(NSString*)userKey;
 - (void)NASWallFullScreenAdLoadSuccess;
 - (void)NASWallFullScreenAdClose;
 - (void)NASWallMustRefreshAdList;
@@ -106,7 +107,7 @@ typedef enum {
 + (void)openUrl:(NSString*)url;
 + (UIImage*)getCSImage;
 + (void)openCS;
-+ (NSString*)userKey;
++ (void)userKey;
 + (NSString*)appKey;
 
 + (void)applicationDidEnterBackground;

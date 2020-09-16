@@ -1,10 +1,6 @@
 # 📖 NAS 오퍼월 iOS SDK - 개발자 정의 UI 개발 가이드
 이 문서는 NAS 오퍼월 SDK 개발자 정의 UI 연동 가이드를 제공합니다.
 
-***‼ 이 SDK 는 iOS 14 버전 지원을 위한 테스트용 SDK 입니다. 상용 버전에 적용하지 마세요 ‼***
-
-***상용 버전을 사용하시려면, [여기](https://github.com/mafin-global/nas-offerwall-ios/blob/master/docs/Guide.Custom.md) 로 이동해주세요.***
-
 오퍼월 UI 표시 방식은 다음 두가지를 지원합니다.
 
 - `내장 UI` : 미리 만들어진 UI를 사용하는 방식으로, 별도의 UI 개발 없이 쉽게 연동할 수 있습니다.
@@ -46,11 +42,17 @@
 - [🔗⠀다른 플렛폼 SDK](-다른-플렛폼-sdk)
 
 ## 📝 업데이트
-- [`2020년 8월 21일`](Update.md#2020년-8월-21일)
+- [`2020년 9월 16일`](Update.md#2020년-9월-16일)
     - iOS 14 지원을 위한 SDK 배포
-    - ***‼ 이 SDK 는 iOS 14 버전 지원을 위한 테스트용 SDK 입니다. 상용 버전에 적용하지 마세요 ‼***
-    - XCode12 Beta 버전에서 SDK 및 예제를 테스트해야 오류가 발생하지 않습니다.
-    - 추가된 설정 내용은 [`SDK 연동 - 라이브러리 추가`](Guide.Embed.md#라이브러리-추가) 항목을 참고해주세요.
+        > iOS 14 부터는 사용자 구분을 위해 필요한 IDFA 값을 획득하기 위해 추적권한 요청이 필요합니다.
+        >
+        > API 사용 시 자동으로 추적권한 요청 팝업이 표시되도록 수정되었습니다. 
+        >
+        > 추가된 설정 내용은 [`SDK 연동 - 라이브러리 추가`](#라이브러리-추가) 항목을 참고해주세요.
+        >
+        > ***XCode 12 이상 버전에서 사용해야 합니다.***
+        >
+        > [XCode 12 GM 버전 다운로드](https://developer.apple.com/ios/submit/)
 - [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
 - [`2020년 1월 30일`](Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
@@ -75,20 +77,23 @@
 
 `프로젝트 설정` > `Build Phases` > `Link Binary With Libraries` 에서 다음 라이브러리를 추가합니다.
 
-***iOS 14 부터는 사용자 구분을 위해 사용하는, IDFA 값을 획득하기 위해 추적권한 요청이 필요합니다.***
-
 - libNASWall.a
 - AdSupport.framework
 - Security.framework
 - WebKit.framework
 - SystemConfiguration.framework
-- ***AppTrackingTransparency.framework***
 
 AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 
-***`Info.plist`에 `NSUserTrackingUsageDescription` 키를 추가한 후, 추적 권한 허용을 위한 사용자 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.***
-
-![](img/img_1.png)
+> ***iOS 14 지원을 위한 추가 설정 (XCode 12 이상 버전)***
+>
+> - `프로젝트 설정` > `Build Phases` > `Link Binary With Libraries` 에서 다음 라이브러리를 추가합니다.
+>
+>   - AppTrackingTransparency.framework
+>
+> - `Info.plist`에 `NSUserTrackingUsageDescription` 키를 추가한 후, 추적 권한 허용을 위한 사용자 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.
+>
+>   ![](img/img_1.png)
 
 ### `초기화`
 오퍼월을 사용하기 앞서 `초기화 함수`를 먼저 호출합니다.
