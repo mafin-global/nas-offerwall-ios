@@ -17,9 +17,10 @@
 		2F5CD84E1BA2769800157DAC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5CD84D1BA2769800157DAC /* SystemConfiguration.framework */; };
 		2F5CD85A1BA2776C00157DAC /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CD8571BA2776C00157DAC /* CustomTableViewCell.m */; };
 		2F5CD85B1BA2776C00157DAC /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CD8591BA2776C00157DAC /* CustomTableViewController.m */; };
-		2F6B37AC250B5084004954DB /* libNASWall_20200331.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6B37A9250B5061004954DB /* libNASWall_20200331.a */; };
+		2FA48607250EF6A8004199AD /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA48606250EF6A8004199AD /* AppTrackingTransparency.framework */; };
 		2FA7EBDB237A4411007B4033 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA7EBDA237A4411007B4033 /* WebKit.framework */; };
 		2FC537361CC4758700D5989D /* EmbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC537351CC4758700D5989D /* EmbedViewController.m */; };
+		2FD1AB7E2511D04B00784550 /* libNASWall_20200916.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD1AB7D2511D04200784550 /* libNASWall_20200916.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +42,12 @@
 		2F5CD8581BA2776C00157DAC /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
 		2F5CD8591BA2776C00157DAC /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		2F6B379A250AF81D004954DB /* libNASWall_20200331.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNASWall_20200331.a; path = sdk/libNASWall_20200331.a; sourceTree = "<group>"; };
-		2F6B37A9250B5061004954DB /* libNASWall_20200331.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNASWall_20200331.a; sourceTree = "<group>"; };
 		2F6B37AA250B5061004954DB /* NASWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASWall.h; sourceTree = "<group>"; };
+		2FA48606250EF6A8004199AD /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		2FA7EBDA237A4411007B4033 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2FC537341CC4758700D5989D /* EmbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbedViewController.h; sourceTree = "<group>"; };
 		2FC537351CC4758700D5989D /* EmbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbedViewController.m; sourceTree = "<group>"; };
+		2FD1AB7D2511D04200784550 /* libNASWall_20200916.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNASWall_20200916.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +55,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6B37AC250B5084004954DB /* libNASWall_20200331.a in Frameworks */,
+				2FA48607250EF6A8004199AD /* AppTrackingTransparency.framework in Frameworks */,
 				2FA7EBDB237A4411007B4033 /* WebKit.framework in Frameworks */,
 				2F5CD84E1BA2769800157DAC /* SystemConfiguration.framework in Frameworks */,
 				2F5CD84C1BA2769100157DAC /* AdSupport.framework in Frameworks */,
+				2FD1AB7E2511D04B00784550 /* libNASWall_20200916.a in Frameworks */,
 				2F5CD84A1BA2768D00157DAC /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +121,7 @@
 		2F6B37A8250B5061004954DB /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				2F6B37A9250B5061004954DB /* libNASWall_20200331.a */,
+				2FD1AB7D2511D04200784550 /* libNASWall_20200916.a */,
 				2F6B37AA250B5061004954DB /* NASWall.h */,
 			);
 			name = sdk;
@@ -128,6 +131,7 @@
 		2FA7EBD9237A4411007B4033 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FA48606250EF6A8004199AD /* AppTrackingTransparency.framework */,
 				2FA7EBDA237A4411007B4033 /* WebKit.framework */,
 				2F6B379A250AF81D004954DB /* libNASWall_20200331.a */,
 			);

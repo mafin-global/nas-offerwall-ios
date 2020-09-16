@@ -35,12 +35,21 @@
 - [🔗⠀다른 플렛폼 SDK](-다른-플렛폼-sdk)
 
 ## 📝 업데이트
+- [`2020년 9월 16일`](Update.md#2020년-9월-16일)
+    - iOS 14 지원을 위한 SDK 배포
+        > iOS 14 부터는 사용자 구분을 위해 필요한 IDFA 값을 획득하기 위해 추적권한 요청이 필요합니다.
+        >
+        > API 사용 시 자동으로 추적권한 요청 팝업이 표시되도록 수정되었습니다. 
+        >
+        > 추가된 설정 내용은 [`SDK 연동 - 라이브러리 추가`](#라이브러리-추가) 항목을 참고해주세요.
+        >
+        > ***XCode 12 이상 버전에서 사용해야 합니다.***
+        >
+        > ***[XCode 12 GM 버전 다운로드](https://developer.apple.com/ios/submit/)***
 - [`2020년 3월 31일`](Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
 - [`2020년 1월 30일`](Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
     - foreground 시 새로고침되지 않는 버그 수정
-- [`2020년 1월 28일`](Update.md#2020년-1월-28일---내장-ui) - _내장 UI_
-    - 환경에 따라 오퍼월이 보이지 않는 현상 수정
 - [전체 업데이트 목록 보기](Update.md)
 
 ## 👤️ 개발자/매체 등록
@@ -60,6 +69,16 @@
 - SystemConfiguration.framework
 
 AdSupport.framework 의 Status 는 Optional 로 변경합니다.
+
+> ***‼️ iOS 14 지원을 위한 추가 설정 (XCode 12 이상 버전) ‼***
+>
+> - `프로젝트 설정` > `Build Phases` > `Link Binary With Libraries` 에서 다음 라이브러리를 추가합니다.
+>
+>   - AppTrackingTransparency.framework
+>
+> - `Info.plist`에 `NSUserTrackingUsageDescription` 키를 추가한 후, 추적 권한 허용을 위한 사용자 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.
+>
+>   ![](img/img_1.png)
 
 ### `초기화`
 오퍼월을 사용하기 앞서 `초기화 함수`를 먼저 호출합니다.
