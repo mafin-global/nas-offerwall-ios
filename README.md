@@ -15,8 +15,6 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
         > 추가된 설정 내용은 [`SDK 연동 - 라이브러리 추가`](docs/Guide.Embed.md#라이브러리-추가) 항목을 참고해주세요.
         >
         > ***XCode 12 이상 버전에서 사용해야 합니다.***
-        >
-        > ***[XCode 12 GM 버전 다운로드](https://developer.apple.com/ios/submit/)***
 - [`2020년 3월 31일`](docs/Update.md#2020년-3월-31일)
     - 통신 관련 버그 수정
 - [`2020년 1월 30일`](docs/Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
