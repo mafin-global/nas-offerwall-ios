@@ -28,4 +28,5 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 
 ## 📦 파일
 - [`/sdk`](sdk) : 최종 릴리즈 SDK
+- [`/old_sdk`](old_sdk) : 기존 릴리즈 SDK
 - [`/example`](example) : 예제 소스
