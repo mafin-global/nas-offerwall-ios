@@ -72,6 +72,8 @@ AdSupport.framework 의 Status 는 Optional 로 변경합니다.
 >
 > - `Info.plist`에 `NSUserTrackingUsageDescription` 키를 추가한 후, 추적 권한 허용을 위한 사용자 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.
 >
+>   추천 문구 : `앱이 귀하의 광고 참여여부 확인을 위한 목적으로 IDFA에 접근하려고 합니다.`
+>
 >   ![](img/img_1.png)
 
 ### `초기화`
