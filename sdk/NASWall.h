@@ -71,6 +71,8 @@ typedef enum {
 - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
 - (void)NASWallGetAdListSuccess:(NSArray*)adList;
 - (void)NASWallGetAdListError:(int)errorCode;
+- (void)NASWallGetAdListMoneySuccess:(int)money unit:(NSString*)unit;
+- (void)NASWallGetAdListMoneyError:(int)errorCode;
 - (void)NASWallGetAdDescriptionSuccess:(NASWallAdInfo*)adInfo description:(NSString*)description;
 - (void)NASWallGetAdDescriptionError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode;
 - (void)NASWallJoinAdSuccess:(NASWallAdInfo*)adInfo url:(NSString*)url;
@@ -99,6 +101,7 @@ typedef enum {
 + (void)purchaseItem:(NSString*)itemId count:(int)count;
 + (void)getAdList:(NSString*)userData;
 + (void)getAdList:(NSString*)userData age:(int)age sex:(NAS_WALL_SEX)sex;
++ (void)getAdListMoney:(int)age sex:(NAS_WALL_SEX)sex;
 + (void)getAdDescription:(NASWallAdInfo*)adInfo;
 + (void)joinAd:(NASWallAdInfo*)adInfo;
 //+ (void)loadFullScreenAdWithAge:(int)age sex:(NAS_WALL_SEX)sex;
