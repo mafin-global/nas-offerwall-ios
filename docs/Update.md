@@ -1,6 +1,15 @@
 # 📝 NAS 오퍼월 iOS SDK 업데이트
 NAS 오퍼월 iOS SDK의 업데이트 정보입니다.
 
+## `2024년 4월 15일`
+- Privacy Manifest 를 위한 PrivacyInfo.xcprivacy 파일 제공
+- /sdk/libNasWall_20240415.a SDK 파일도 반드시 업데이트 해주세요.
+    > 5월 1일부터 NAS 오퍼월 SDK를 사용하는 앱을 App Store Connect에 업로드 하려면 반드시 [Privacy Manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) 를 적용해야합니다.
+    > 
+    > /sdk 폴더에 있는 PrivacyInfo.xcprivacy 파일에 NAS 오퍼월 SDK가 사용하는 Privacy Manifest 정보가 포함되어 있습니다.
+    > 
+    > 귀사의 PrivacyInfo.xcprivacy 파일에 내용을 추가하거나, /sdk 폴더에 있는 파일을 사용하시기 바랍니다.
+
 ## `2020년 9월 16일`
 - iOS 14 지원을 위한 SDK 배포
     > iOS 14 부터는 사용자 구분을 위해 필요한 IDFA 값을 획득하기 위해 추적권한 요청이 필요합니다.
