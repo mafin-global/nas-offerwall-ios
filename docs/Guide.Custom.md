@@ -42,6 +42,9 @@
 - [🔗⠀다른 플렛폼 SDK](-다른-플렛폼-sdk)
 
 ## 📝 업데이트
+- [`2025년 2월 24일`](docs/Update.md#2025년-2월-24일)
+  - iOS 18 openURL 관련 버그 수정
+
 - [`2024년 4월 15일`](docs/Update.md#2024년-4월-15일)
   - Privacy Manifest 를 위한 PrivacyInfo.xcprivacy 파일 제공
   - /sdk/libNasWall_20240415.a SDK 파일도 반드시 업데이트 해주세요.

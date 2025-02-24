@@ -7,7 +7,7 @@
 //
 
 #warning APP_KEY, TEST_MODE, USER_DATA 값을 설정하세요.
-  static NSString *APP_KEY = @"";
+static NSString *APP_KEY = @"";
 static BOOL TEST_MODE = NO;
 static NSString *USER_DATA = @"test_user_data";
 

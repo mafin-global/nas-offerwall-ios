@@ -6,6 +6,9 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 - [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
 
 ## 📝 업데이트
+- [`2025년 2월 24일`](docs/Update.md#2025년-2월-24일)
+    - iOS 18 openURL 관련 버그 수정
+
 - [`2024년 4월 15일`](docs/Update.md#2024년-4월-15일)
     - Privacy Manifest 를 위한 PrivacyInfo.xcprivacy 파일 제공
     - /sdk/libNasWall_20240415.a SDK 파일도 반드시 업데이트 해주세요.

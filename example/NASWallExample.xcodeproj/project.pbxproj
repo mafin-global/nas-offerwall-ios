@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F52A1902BCCD5C1002EA292 /* libNASWall_20240415.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F52A18C2BCCD5C1002EA292 /* libNASWall_20240415.a */; };
 		2F52A1932BCCE9DC002EA292 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2F52A1922BCCE9D7002EA292 /* PrivacyInfo.xcprivacy */; };
 		2F5BA51A1BA280A700DECA68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5BA5181BA280A700DECA68 /* Main.storyboard */; };
 		2F5CD8301BA2764800157DAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CD82F1BA2764800157DAC /* main.m */; };
@@ -22,10 +21,10 @@
 		2FA48607250EF6A8004199AD /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA48606250EF6A8004199AD /* AppTrackingTransparency.framework */; };
 		2FA7EBDB237A4411007B4033 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA7EBDA237A4411007B4033 /* WebKit.framework */; };
 		2FC537361CC4758700D5989D /* EmbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC537351CC4758700D5989D /* EmbedViewController.m */; };
+		C8F5936F2D6C7875009DBC83 /* libNASWall_20250224.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F5936E2D6C7875009DBC83 /* libNASWall_20250224.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F52A18C2BCCD5C1002EA292 /* libNASWall_20240415.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNASWall_20240415.a; sourceTree = "<group>"; };
 		2F52A18D2BCCD5C1002EA292 /* NASWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASWall.h; sourceTree = "<group>"; };
 		2F52A1922BCCE9D7002EA292 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		2F5BA5191BA280A700DECA68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		2FA7EBDA237A4411007B4033 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2FC537341CC4758700D5989D /* EmbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbedViewController.h; sourceTree = "<group>"; };
 		2FC537351CC4758700D5989D /* EmbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbedViewController.m; sourceTree = "<group>"; };
+		C8F5936E2D6C7875009DBC83 /* libNASWall_20250224.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNASWall_20250224.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA48607250EF6A8004199AD /* AppTrackingTransparency.framework in Frameworks */,
+				C8F5936F2D6C7875009DBC83 /* libNASWall_20250224.a in Frameworks */,
 				2FA7EBDB237A4411007B4033 /* WebKit.framework in Frameworks */,
 				2F5CD84E1BA2769800157DAC /* SystemConfiguration.framework in Frameworks */,
 				2F5CD84C1BA2769100157DAC /* AdSupport.framework in Frameworks */,
-				2F52A1902BCCD5C1002EA292 /* libNASWall_20240415.a in Frameworks */,
 				2F5CD84A1BA2768D00157DAC /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,7 +72,7 @@
 		2F52A18F2BCCD5C1002EA292 /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				2F52A18C2BCCD5C1002EA292 /* libNASWall_20240415.a */,
+				C8F5936E2D6C7875009DBC83 /* libNASWall_20250224.a */,
 				2F52A18D2BCCD5C1002EA292 /* NASWall.h */,
 			);
 			name = sdk;
@@ -172,6 +172,7 @@
 				TargetAttributes = {
 					2F5CD82A1BA2764800157DAC = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 6ZSHP848U3;
 					};
 				};
 			};
@@ -342,16 +343,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				EXCLUDED_ARCHS = arm64;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZSHP848U3;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = NASWallExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../sdk",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.NASWallExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.naswallexample3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -360,16 +361,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				EXCLUDED_ARCHS = arm64;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZSHP848U3;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = NASWallExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../sdk",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.NASWallExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.naswallexample3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
