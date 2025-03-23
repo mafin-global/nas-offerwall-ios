@@ -10,401 +10,510 @@
 
 ## 목차
 - [📝⠀업데이트](#-업데이트)
-- [❗⠀주의사항](#-주의사항)
-- [👤️⠀개발자/매체 등록](#%EF%B8%8F-개발자-매체-등록)
-- [🚀⠀SDK 연동](#-sdk-연동)
-    - [라이브러리 추가](#라이브러리-추가)
-    - [초기화](#초기화)
-    - [추가 설정](#추가-설정)
-    - [광고 목록 가져오기](#광고-목록-가져오기)
-    - [광고 참여](#광고-참여)
-    - [광고 참여 URL 실행](#광고-참여-url-실행)
-    - [광고 상세 설명글](#광고-상세-설명글)
-    - [적립금 조회](#적립금-조회-nas-서버에서-적립금-관리-시-사용) _(NAS 서버에서 적립금 관리 시 사용)_
-    - [적립금 사용 (아이템 구매)](#적립금-사용-아이템-구매-nas-서버에서-적립금-관리-시-사용) _(NAS 서버에서 적립금 관리 시 사용)_
-    - [이벤트](#이벤트-공통) _(공통)_
-        - [광고 목록 가져오기 성공 (NASWallGetAdListSuccess)](#광고-목록-가져오기-성공-naswallgetadlistsuccess)
-        - [광고 목록 가져오기 실패 (NASWallGetAdListError)](#광고-목록-가져오기-실패-naswallgetadlisterror)
-        - [광고 참여 성공 (NASWallJoinAdSuccess)](#광고-참여-성공-naswalljoinadsuccess)
-        - [광고 참여 실패 (NASWallJoinAdError)](#광고-참여-실패-naswalljoinaderror)
-        - [광고 참여 URL 실행 성공 (NASWallOpenUrlSuccess)](#광고-참여-url-실행-성공-naswallopenurlsuccess)
-        - [광고 참여 URL 실행 실패 (NASWallOpenUrlError)](#광고-참여-url-실행-실패-naswallopenurlerror)
-        - [광고 목록 다시 가져오기 요청 (NASWallMustRefreshAdList)](#광고-목록-다시-가져오기-요청-naswallmustrefreshadlist)
-        - [광고 상세 설명글 성공 (NASWallGetAdDescriptionSuccess)](#광고-상세-설명글-성공-naswallgetaddescriptionsuccess)
-        - [광고 상세 설명글 실패 (NASWallGetAdDescriptionError)](#광고-상세-설명글-실패-naswallgetaddescriptionerror)
-    - [이벤트](#이벤트-nas-서버에서-적립금-관리-시-사용) _(NAS 서버에서 적립금 관리 시 사용)_
-        - [적립금 조회 성공 (NASWallGetUserPointSuccess)](#적립금-조회-성공-naswallgetuserpointsuccess)
-        - [적립금 조회 실패 (NASWallGetUserPointError)](#적립금-조회-실패-naswallgetuserpointerror)
-        - [아이템 구매 성공 (NASWallPurchaseItemSuccess)](#아이템-구매-성공-naswallpurchaseitemsuccess)
-        - [아이템 구매 적립금 부족 (NASWallPurchaseItemNotEnoughPoint)](#아이템-구매-적립금-부족-naswallpurchaseitemnotenoughpoint)
-        - [아이템 구매 실패 (NASWallPurchaseItemError)](#아이템-구매-실패-naswallpurchaseitemerror)
-- [📖⠀다른 문서](-다른-문서)
-- [🔗⠀다른 플렛폼 SDK](-다른-플렛폼-sdk)
+- [👤 개발자/매체 등록](#-개발자매체-등록)
+- [💾 설치하기](#-설치하기)
+  - [NasWallKit 추가](#-NasWallKit-추가)
+  - [라이브러리 추가](#-라이브러리-추가)
+  - [추적 권한 허용 표시 문구 설정](#-추적-권한-허용-표시-문구-설정)
+  - [Privacy Manifest 설정](#-Privacy-Manifest-설정)
+- [🚀 초기화](#-초기화)
+  - [개발자 서버에서 적립금 관리 시](#-개발자-서버에서-적립금-관리-시)
+  - [NAS 서버에서 적립금 관리 시](#-NAS-서버에서-적립금-관리-시)
+- [📱 광고 표시](#-광고-표시)
+  - [광고 목록 조회](#-광고-목록-조회)
+  - [광고 상세 설명 조회](#-광고-상세-설명-조회)
+  - [광고 참여](#-광고-참여)
+  - [문의하기](#-문의하기)
+- [💰 적립금](#-적립금)
+  - [획득 가능 총 적립금 조회](#-획득-가능-총-적립금-조회)
+  - [보유 적립금 조회](#-보유-적립금-조회-NAS-서버에서-적립금-관리-시-사용) *(NAS 서버에서 적립금 관리 시 사용)*
+  - [아이템 목록 조회](#-아이템-목록-조회-NAS-서버에서-적립금-관리-시-사용) *(NAS 서버에서 적립금 관리 시 사용)*
+  - [아이템 구입](#-아이템-구입-NAS-서버에서-적립금-관리-시-사용) *(NAS 서버에서 적립금 관리 시 사용)*
+- [📦 기타](#-기타)
+  - [테마 설정](#-테마-설정)
+  - [Preview 전용 데이터 로드 지연 시간(초) 설정](#-Preview-전용-데이터-로드-지연-시간초-설정)
+  - [Preview 전용 데이터 로드 강제 실패 처리 여부 설정](#-Preview-전용-데이터-로드-강제-실패-처리-여부-설정)
+- [📘⠀정의](#-정의)
+  - [NasWallAdListType](#-NasWallAdListType)
+  - [NasWallAdList](#-NasWallAdList)
+  - [NasWallAdInfo](#-NasWallAdInfo)
+  - [NasWallPointInfo](#-NasWallPointInfo)
+  - [NasWallItemList](#-NasWallItemList)
+  - [NasWallItemInfo](#-NasWallItemInfo)
+  - [NasWallTheme](#-NasWallTheme)
+- [📖⠀다른 문서](#-다른-문서)
+- [🔗⠀다른 플렛폼 SDK](#-다른-플렛폼-sdk)
 
 ## 📝 업데이트
-- [`2025년 2월 24일`](docs/Update.md#2025년-2월-24일)
-  - iOS 18 openURL 관련 버그 수정
+- `v2.0.0`
+  - Major 버전 업데이트로 인해 연동 방식의 대대적인 변경이 있습니다.
+  - 오퍼월 UI가 새롭게 변경되었습니다.
+  - Swift 기반의 새로운 예제 프로그램이 제공됩니다.
+  - 변경된 자세한 연동 방법은 개발 가이드 문서를 참고해주세요.
 
-- [`2024년 4월 15일`](docs/Update.md#2024년-4월-15일)
-  - Privacy Manifest 를 위한 PrivacyInfo.xcprivacy 파일 제공
-  - /sdk/libNasWall_20240415.a SDK 파일도 반드시 업데이트 해주세요.
-    >   5월 1일부터 NAS 오퍼월 SDK를 사용하는 앱을 App Store Connect에 업로드 하려면 반드시 [Privacy Manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) 를 적용해야합니다.
-    >
-    >   /sdk 폴더에 있는 PrivacyInfo.xcprivacy 파일에 NAS 오퍼월 SDK가 사용하는 Privacy Manifest 정보가 포함되어 있습니다.
-    >
-    >   귀사의 PrivacyInfo.xcprivacy 파일에 내용을 추가하거나, /sdk 폴더에 있는 파일을 사용하시기 바랍니다.
-
-- [`2020년 9월 16일`](docs/Update.md#2020년-9월-16일)
-  - iOS 14 지원을 위한 SDK 배포
-    > iOS 14 부터는 사용자 구분을 위해 필요한 IDFA 값을 획득하기 위해 추적권한 요청이 필요합니다.
-    >
-    > API 사용 시 자동으로 추적권한 요청 팝업이 표시되도록 수정되었습니다.
-    >
-    > 추가된 설정 내용은 [`SDK 연동 - 라이브러리 추가`](docs/Guide.Embed.md#라이브러리-추가) 항목을 참고해주세요.
-    >
-    > ***XCode 12 이상 버전에서 사용해야 합니다.***
-
-- [`2020년 3월 31일`](docs/Update.md#2020년-3월-31일)
-  - 통신 관련 버그 수정
-
-- [`2020년 1월 30일`](docs/Update.md#2020년-1월-30일---내장-ui) - _내장 UI_
-  - foreground 시 새로고침되지 않는 버그 수정
 
 - [전체 업데이트 목록 보기](Update.md)
 
-## ❗ 주의사항
-`개발자 정의 UI` 사용 시,
-`잠금화면`, `앱의 홈 화면` 에서 [`광고 목록 가져오기 API`](#광고-목록-가져오기)를 호출해서는 안됩니다.
-
-이 화면에서 [`광고 목록 가져오기 API`](#광고-목록-가져오기) 사용 시, 과중한 API 호출로 인해 서버에 많은 부하가 발생합니다.
-
-이런 경우, 광고 목록이 `차단` 당할 수 있으니 주의해 주시기 바랍니다.
-
-## 👤️ 개발자/매체 등록
+## 👤 개발자/매체 등록
 [오퍼월 적용 가이드 문서](https://github.com/mafin-global/nas-offerwall#%EF%B8%8F-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%93%B1%EB%A1%9D) 를 참고해주세요.
 
-## 🚀 SDK 연동
+## 💾 설치하기
 
-### `라이브러리 추가`
-`/sdk` 폴더의 `libNASWall.a`, `NASWall.h` 파일을 프로젝트에 추가합니다.
+### 🔹 *NasWallKit 추가*
+`File` > `Add Package Dependency...` 메뉴를 선택합니다.
 
+![Add Package Dependencies...](img/menu_file_add_package.png)
+
+우측 상단 검색에 `https://github.com/mafin-global/nas-offerwall-ios` 를 입력하고 `Add Package` 버튼을 클릭합니다.
+
+![Add Package 1](img/add_package_1.png)
+
+`Add to Target` 이 개발 중인 프로젝트가 맞는지 확인하고 `Add Package` 버튼을 클릭합니다.
+
+![Add Package 2](img/add_package_2.png)
+
+`NasWallKit` 패키지가 정상적으로 추가되었는지 확인합니다.
+
+![Confirm Added Package](img/confirm_added_package.png)
+
+### 🔹 *라이브러리 추가*
 `프로젝트 설정` > `Build Phases` > `Link Binary With Libraries` 에서 다음 라이브러리를 추가합니다.
 
-- libNASWall.a
+- AppTrackingTransparency.framework
 - AdSupport.framework
+- CryptoKit.framework
 - Security.framework
-- WebKit.framework
-- SystemConfiguration.framework
 
-AdSupport.framework 의 Status 는 Optional 로 변경합니다.
+![Link Binary](img/link_library.png)
 
-> ***‼ iOS 14 지원을 위한 추가 설정 (XCode 12 이상 버전) ‼***
->
-> - `프로젝트 설정` > `Build Phases` > `Link Binary With Libraries` 에서 다음 라이브러리를 추가합니다.
->
->   - AppTrackingTransparency.framework
->
-> - `Info.plist`에 `NSUserTrackingUsageDescription` 키를 추가한 후, 추적 권한 허용을 위한 사용자 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.
->
->   추천 문구 : `앱이 귀하의 광고 참여여부 확인을 위한 목적으로 IDFA에 접근하려고 합니다.`
->
->   ![](img/img_1.png)
+### 🔹 *추적 권한 허용 표시 문구 설정*
 
-### `초기화`
-오퍼월을 사용하기 앞서 `초기화 함수`를 먼저 호출합니다.
+`Info.plist`에 `Privacy - Tracking Usage Description` 키를 추가한 후, 추적 권한 허용을 위한 표시 문구를 입력합니다. 문구는 앱의 성격에 맞게 변경할 수 있습니다.
 
-- ***NAS 서버에서 적립금 관리 시 사용***
-    - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
-    - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
-    - `userId` : 사용자를 구분하기 위한 ID입니다. NAS 서버에서 `사용자 ID` 별로 적립금이 쌓이기 때문에 사용자별로 고유한 값을 입력해야합니다.
-    - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
-    ```
-    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    {
-        [NASWall initWithAppKey:@"앱KEY" testMode:NO userId:@"사용자ID" delegate:self];
-        ...
-    }
-    ```
-  
-- ***개발자 서버에서 적립금 관리 시 사용***
-    - `appKey` : 앱 등록 후 받은 32자리 키를 입력합니다.
-    - `testMode` : 개발 `테스트 버전인 경우에만 YES`를 입력하고, `배포 버전에서는 NO`를 입력합니다.
-    - `delegate` : SDK의 `이벤트`를 받을 객체를 지정합니다.
-    ```
-    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    {
-        [NASWall initWithAppKey:@"앱KEY" testMode:testMode delegate:self];
-        ...
-    }
-    ```
+- 추천 문구 : `앱이 귀하의 광고 참여여부 확인을 위한 목적으로 IDFA에 접근하려고 합니다.`
 
-### `추가 설정`
-`AppDelegate` 클래스의 `applicationDidEnterBackground`, `applicationWilEnterForeground` 함수에 다음 코드를 추가합니다.
+![](img/info_privacy_tracking.png)
 
+### 🔹 *Privacy Manifest 설정*
+
+`/sdk` 폴더에 있는 `PrivacyInfo.xcprivacy` 파일에 SDK가 사용하는 Privacy Manifest 정보가 포함되어 있습니다.
+
+귀사의 `PrivacyInfo.xcprivacy` 파일에 내용을 추가하거나, `/sdk` 폴더에 있는 파일을 사용하시기 바랍니다.
+
+`Privacy Manifest` 관련 자세한 내용은 [애플 공식 문서](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)를 확인해 주시기를 바랍니다.
+
+## 🚀 초기화
+SDK를 초기화합니다.
+
+*❗ SDK의 다른 모든 함수를 호출하기 전에 초기화 함수를 가장 먼저 호출해야합니다.*   
+*❗ 앱 내에서 회원이 로그아웃 후 다른 계정으로 로그인하는 경우, 새로 로그인한 회원 정보를 기준으로 다시 초기화 함수를 호출해야합니다.*
+
+### 🔹 *개발자 서버에서 적립금 관리 시*
+
+```swift
+func initialize(
+    _ appKey: String,
+    userData: String,
+    testMode: Bool,
+    handler: (@MainActor (NSError?) -> Void)? = nil
+)
 ```
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    [NASWall applicationDidEnterBackground];
-    ...
-}
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    [NASWall applicationWillEnterForeground];
-    ...
+- `appKey`: 앱의 32자리 고유 키를 지정합니다. NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 확인할 수 있습니다.
+- `userData`: 회원 ID 등의 적립금 지급에 필요한 고유한 회원 정보를 지정합니다. 광고 참여 완료 시 개발자 서버로 콜백 호출될 때 함께 제공됩니다.
+- `testMode`: `true` 로 설정 시 테스트 광고가 표시됩니다.
+- `handler`: 초기화 처리 완료 시 호출되는 핸들러입니다.
+  - `NSError`: 초기화 실패 시 오류 정보가 제공됩니다.
+
+*사용 예시*
+```swift
+NasWall.initialize("32자리 앱 KEY", userData: "회원 데이터", testMode: false) { error in
+    if error == nil {
+       // 초기화 성공 시 처리 코드
+    } else {
+       // 초기화 실패 시 처리 코드
+    }
 }
 ```
 
-### `광고 목록 가져오기`
-`[NASWall getAdList:userData]` 함수를 호출하여 광고 목록을 가져올 수 있습니다.
-
-성공 시 `NASWallGetAdListSuccess` 이벤트가 발생합니다.<br/>
-실패 시 `NASWallGetAdListError` 이벤트가 발생합니다.
-
-`NASWallMustRefreshAdList` 이벤트가 발생하면 반드시 광고 목록을 다시 가져와야 합니다.
-
-- ***개발자 서버에서 적립금 관리 시 사용***
-    > `USER_DATA`에 개발자가 사용자를 구분하기 위한 값을 입력합니다. 광고 참여 완료 후 개발자 서버로 `콜백 URL` 호출 시. `[USER_DATA]` 파라메터로 전달됩니다. 
-
-- ***NAS 서버에서 적립금 관리 시 사용***
-    > `USER_DATA`에 `초기화 함수` 호출 시 사용한 `userId`를 입력합니다.
-    >
-
-```
-[NASWall openWallWithUserData:@"USER_DATA"];
+### 🔹 *NAS 서버에서 적립금 관리 시*
+```swift
+func initialize(
+    _ appKey: String,
+    userId: String,
+    testMode: Bool,
+    handler: (@MainActor (NSError?) - Void)? = nil
+)
 ```
 
-***타겟팅 광고 노출 방법***
-    
-기본적으로 오퍼월에는 타겟팅 광고는 노출되지 않습니다.
-사용자의 `연령` 또는 `성별` 정보가 있는 경우, 아래와 같은 방법으로 타겟팅 광고를 노출시킬 수 있습니다.
+- `appKey`: 앱의 32자리 고유 키를 지정합니다. NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 확인할 수 있습니다.
+- `userId`: 회원의 고유한 ID를 지정합니다. "적립금 조회", "아이템 구입" 시 여기서 지정한 회원 ID를 기준으로 적용됩니다.
+- `testMode`: `true` 로 설정 시 테스트 광고가 표시됩니다.
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - `NSError`: 초기화 실패 시 오류 정보가 제공됩니다.
 
-```
-int age = 20; // 연령 (연령 정보가 없을 경우 0 으로 설정)
-NAS_WALL_SEX sex = NAS_WALL_SEX_MALE; // 성별 (NAS_WALL_SEX_UNKNOWN=성별정보없음, NAS_WALL_SEX_MALE=남자, NAS_WALL_SEX_FEMALE=여자)
-[NASWall getAdList:@"USER_DATA" age:age sex:sex];
-```
-
-***CPI 광고 설치확인 문구 표시***
-
-`CPI 광고`는 사용자의 참여 상태에 따라 `설치확인` 문구를 표시해주어야합니다.
-광고 유형이 `CPI` 이고, 현재 상태가 `참여`상태인지를 체크하여 문구를 표시해줍니다.
-자세한 내용은 `예제 프로그램`을 참고해주세요.
-
-```
-if (adInfo.adType == NAS_WALL_AD_TYPE_CPI && adInfo.joinStatus == NAS_WALL_JOIN_STATUS_JOIN)
-{
-    // 설치확인 문구 표시
+*사용 예시*
+```swift
+NasWall.initialize("32자리 앱 KEY", userId: "회원 ID", testMode: false) { error in
+    if error == nil {
+        // 초기화 성공 시 처리 코드
+    } else {
+        // 초기화 실패 시 처리 코드
+    }
 }
 ```
 
-### `광고 참여`
-`[NASWall joinAd:adInfo]` 함수를 호출하여 광고에 참여할 수 있습니다.
+## 📱 광고 표시
 
-`adInfo`는 광고 `목록 가져오기 함수`를 호출하여 받은 광고 정보를 사용합니다.
+개발자 정의 UI로 광고를 표시하고, 광고에 참여하는 자세한 방법은 [예제 프로그램](/example)을 참고해주시기 바랍니다.
 
-성공 시 `NASWallJoinAdSuccess` 이벤트가 발생합니다.<br/>
-실패 시 `NASWallJoinAdError` 이벤트가 발생합니다.
+### 🔹 *광고 목록 조회*
+광고 목록을 조회합니다.
 
-```
-[NASWall joinAd:adInfo];
-```
+*❗ Swift UI Preview 상태에서는 라이브 데이터가 아닌 Preview 전용 데이터가 조회됩니다.*
 
-### `광고 참여 URL 실행`
-`[NASWall openUrl:url]` 함수를 호출하여 괌고 참여 URL을 실행할 수 있습니다.
-
-`url`은 광고 참여 함수를 호출하여 `NASWallJoinAdSuccess` 이벤트에서 받은 url을 사용합니다.
-
-성공 시 `NASWallOpenUrlSuccess` 이벤트가 발생합니다.<br/>
-실패 시 `NASWallOpenUrlError` 이벤트가 발생합니다.
-
-```
-[NASWall openUrl:url];
+```swift
+func adList(
+    _ listType: NasWallAdListType,
+    handler: @MainActor @escaping (NasWallAdList?, NSError?) -> Void
+)
 ```
 
-### `광고 상세 설명글`
-`[NASWall getAdDescription:adInfo]` 함수를 호출하여 광고의 상세 설명글을 가져올 수 있습니다.
+- `listType`: 조회 할 광고 목록 구분을 지정합니다.
+  - `.basic`: 참여적립 광고 목록 (CPI, CPE, CPA, CPC 등)
+  - `.cps`: 쇼핑적립 광고 목록 (CPS)
+  - `.cpq`: 퀴즈적립 광고 목록 (CPQ)
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - [`NasWallAdList`](#-NasWallAdList): 조회 성공 시 광고 목록이 제공됩니다.
+  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
 
-`adInfo`는 `광고 목록 가져오기 함수`를 호출하여 받은 광고 정보를 사용합니다.
-
-성공 시 `NASWallGetAdDescriptionSuccess` 이벤트가 발생합니다.<br/>
-실패 시 `NASWallGetAdDescriptionError` 이벤트가 발생합니다.
-
-```
-[NASWall getAdDescription:adInfo];
-```
-
-### `적립금 조회 (NAS 서버에서 적립금 관리 시 사용)`
-NASWall 클래스의 `getUserPoint` 함수를 호출하여 사용자 적립금을 조회할 수 있습니다.
-
-성공 시 `NASWallGetUserPointSuccess` 이벤트가 발생합니다.<br/>
-실패 시 `NASWallGetUserPointError` 이벤트가 발생합니다.
-
-```
-[NASWall getUserPoint];
-```
-
-### `적립금 사용 (아이템 구매) (NAS 서버에서 적립금 관리 시 사용)`
-NASWall 클래스의 `purchaseItem:(NSString*)itemId` 함수를 호출하여 아이템을 구매하고 사용자 적립금을 사용할 수 있습니다.
-
-`purchaseItem:(NSString*)itemId count:(int)count` 함수를 사용하면 구매 수량을 지정하여 구매할 수 있습니다.
-
-성공 시 `NASWallPurchaseItemSuccess` 이벤트가 발생합니다.<br/>
-실패 시 `NASWallPurchaseItemError` 이벤트가 발생합니다.<br/>
-적립금 부족 시 `NASWallPurchaseItemNotEnoughPoint` 이벤트가 발생합니다.
-
-```
-[NASWall purchaseItem:itemId];
-```
-
-### `이벤트` _(공통)_
-SDK 초기화 시 `delegate` 에 지정한 객체로 아래의 이벤트가 전달됩니다.
-
-- #### 광고 목록 가져오기 성공 (NASWallGetAdListSuccess)
-    광고 목록 가져오기가 성공했을 때 발생하는 이벤트
-    - `adList` : 광고 목록 (`NASWallAdInfo`의 배열)
-    ```
-    - (void)NASWallGetAdListSuccess:(NSArray*)adList
-    {
-        for (NASWallAdInfo adInfo : adList)
-        {
-            NSString *title = adInfo.title; //광고명
-            NSString *iconUrl = adInfo.iconUrl; //아이콘 Url
-            NSString *missionText = adInfo.missionText; //참여방법
-            NSString *adPrice = adInfo.adPrice; //참여비용
-            int rewardPrice = adInfo.rewardPrice; //적립금
-            NSString *rewardUnit = adInfo.rewardUnit; //적립금단위
-        }
+*사용 예시*
+```swift
+NasWall.adList(.basic) { adList, error in
+    if error == nil {
+        // 성공 시 처리 코드
+    } else {
+        // 실패 시 처리 코드
     }
-    ```
+}
+```
+### 🔹 *광고 상세 설명 조회*
+광고 상세 설명을 조회합니다.
 
-- #### 광고 목록 가져오기 실패 (NASWallGetAdListError)
-    광고 목록 가져오기가 실패했을 때 발생하는 이벤트
-    - `errorCode` : 오류 코드
-        - `-99999` : 파라메터 오류
-        - `-30001` : 콜백 URL이 등록되지 않았음. 앱 설정에서 콜백 URL을 등록해야함. (개발자 서버에서 적립금을 관리하는 경우)
-        - `그외` : 기타 오류
-    ```
-    - (void)NASWallGetAdListError:(int)errorCode
-    ```
+*❗ Swift UI Preview 상태에서는 라이브 데이터가 아닌 Preview 전용 데이터가 조회됩니다.*
 
-- #### 광고 참여 성공 (NASWallJoinAdSuccess)
-    광고 참여에 성공했을 때 발생하는 이벤트. 광고 참여 URL을 실행해야 합니다.
-    - `adInfo` : 참여 광고 정보
-    - `url` : 광고 참여 URL
-    ```
-    - (void)NASWallJoinAdSuccess:(NASWallAdInfo*)adInfo url:(NSString*)url
-    {
-        [NASWall openUrl:url];
+```swift
+func adDescription(
+    _ adInfo: NasWallAdInfo,
+    handler: @MainActor @escaping (String?, NSError?) -> Void
+)
+```
+
+- `adInfo`: [광고 목록 조회](#-광고-목록-조회) 함수를 통해 획득한 광고 목록 중 조회할 광고 정보를 지정합니다.
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - `String`: 조회 성공 시 광고 상세 정보가 제공됩니다.
+  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
+
+*사용 예시*
+```swift
+NasWall.adDescription(adInfo) { description, error in
+    if error == nil {
+        // 성공 시 처리 코드
+    } else {
+        // 실패 시 처리 코드
     }
-    ```
-- #### 광고 참여 실패 (NASWallJoinAdError)
-    광고 참여에 실패했을 때 발생하는 이벤트
-    - `adInfo` : 참여 광고 정보
-    - `errorCode` : 오류 코드
-        - `-11` : `NAS 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정하지 않았음 (초기화 시 사용자 ID를 지정해야함)
-        - `-12` : `개발자 서버에서 적립금 관리`하는 경우 `사용자 ID`를 지정했음 (초기화 시 사용자 ID를 지정하지 말아야함)
-        - `-10001` : 광고 종료됨
-        - `-20001` : 이미 참여 완료한 광고
-        - `-99999` : 파라메터 오류
-        - `그외` : 기타 오류
-    ```
-    - (void)NASWallJoinAdError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode
-    ```
+}
+```
 
-- #### 광고 참여 URL 실행 성공 (NASWallOpenUrlSuccess)
-    광고 참여 URL 실행에 성공 했을 때 발생하는 이벤트
-    - `url` : 광고 참여 URL
-    ```
-    - (void)NASWallOpenUrlSuccess:(NSString*)url
-    ```
-    
-- #### 광고 참여 URL 실행 실패 (NASWallOpenUrlError)
-    광고 참여 URL 실행에 실패했을 때 발생하는 이벤트
-    - `url` : 광고 참여 URL
-    - `errorCode` : 오류 코드
-        - `-1` : URL을 실행할 수 없음
-        - `그외` : 기타 오류
-    ```
-    - (void)NASWallOpenUrlError:(NSString*)url errorCode:(int)errorCode
-    ```
+### 🔹 *광고 참여*
+광고에 참여합니다.
 
-- #### 광고 목록 다시 가져오기 요청 (NASWallMustRefreshAdList)
-    광고 목록을 다시 가져와야 할 때 발생하는 이벤트. 이 이벤트가 발생하면 반드시 광고 목록을 다시 가져와야 합니다.
-    ```
-    - (void)NASWallMustRefreshAdList
-    {
-        [NASWall getAdList:USER_DATA];
+*❗ Swift UI Preview 상태에서는 참여할 수 없습니다. 또한 시뮬레이터에서는 광고주 식별자(IDFA) 값이 없기 때문에 참여 시 오류가 발생합니다.*
+
+```swift
+func joinAd(
+    _ adInfo: NasWallAdInfo,
+    handler: @MainActor @escaping (NSError?) -> Void
+)
+```
+
+- `adInfo`: [광고 목록 조회](#-광고-목록-조회) 함수를 통해 획득한 광고 목록 중 참여할 광고 정보를 지정합니다.
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - `NSError`: 참여 실패 시 오류 정보가 제공됩니다.
+
+```swift
+NasWall.joinAd(adInfo) { error in
+    if error == nil {
+        // 성공 시 처리 코드
+    } else {
+        // 실패 시 처리 코드
     }
-    ```
-    
-- #### 광고 상세 설명글 성공 (NASWallGetAdDescriptionSuccess)
-    광고 참여 설명글 가져오기가 성공했을 때 발생하는 이벤트
-    - `adInfo` : 광고 정보
-    - `description` : 광고 상세 설명글
-    ```
-    - (void)NASWallGetAdDescriptionSuccess:(NASWallAdInfo*)adInfo description:(NSString*)description
-    ```
-    
-- #### 광고 상세 설명글 실패 (NASWallGetAdDescriptionError)
-    광고 참여 설명글 가져오기가 실패했을 때 발생하는 이벤트
-    - `adInfo` : 광고 정보
-    - `errorCode` : 오류 코드
-        - `-1` : 없는 캠페인
-        - `그외` : 기타 오류
-    ```
-    - (void)NASWallGetAdDescriptionError:(NASWallAdInfo*)adInfo errorCode:(int)errorCode
-    ```
+}
+```
 
-### `이벤트` _(NAS 서버에서 적립금 관리 시 사용)_
-이 이벤트는 NAS 서버에서 적립금 관리 시에 사용하는 이벤트입니다.
+### 🔹 *문의하기*
+문의하기(전체 화면)를 표시합니다.
 
-- #### 적립금 조회 성공 (NASWallGetUserPointSuccess)
-    적립금 조회가 성공했을 때 발생하는 이벤트
-    - `point` : 적립 금액
-    - `unit` : 적립 금액 단위
-    ```
-    - (void)NASWallGetUserPointSuccess:(int)point unit:(NSString*)unit;
-    ```
-    
-- #### 적립금 조회 실패 (NASWallGetUserPointError)
-    적립금 조회가 실패했을 때 발생하는 이벤트
-    - `errorCode` : 오류 코드
-        - `-10` : 잘못된 앱 KEY<br/>
-        - `-100` :  개발자 서버에서 적립금을 관리하는 경우는 사용할 수 없음<br/>
-        - `그외` : 기타 오류
-    ```
-    - (void)NASWallGetUserPointError:(int)errorCode;
-    ```
+```swift
+func openCs(
+    _ handler: @MainActor @escaping (NSError?) -> Void,
+    closeHandler: (@MainActor () -> Void)? = nil
+)
+```
 
-- #### 아이템 구매 성공 (NASWallPurchaseItemSuccess)
-    아이템 구매가 성공했을 때 발생하는 이벤트
-    - `itemId` : 구매 아이템 ID
-    - `count` : 구매 수량
-    - `point` : 구매 후 남은 적립 금액
-    - `unit` : 적립 금액 단위
-    ```
-    - (void)NASWallPurchaseItemSuccess:(NSString*)itemId count:(int)count point:(int)point unit:(NSString*)unit;
-    ```
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - `NSError`: 문의하기 열기 실패 시 오류 정보가 제공됩니다.
+- `closeHandler`: 문의하기가 종료된 후 호출되는 핸들러입니다.
 
-- #### 아이템 구매 적립금 부족 (NASWallPurchaseItemNotEnoughPoint)
-    아이템 구매 시 적립금이 부족할 때 발생하는 이벤트
-    - `itemId` : 구매 아이템 ID
-    - `count` : 구매 수량
-    ```
-    - (void)NASWallPurchaseItemNotEnoughPoint:(NSString*)itemId count:(int)count;
-    ```
-    
-- #### 아이템 구매 실패 (NASWallPurchaseItemError)
-    아이템 구매가 실패했을 때 발생하는 이벤트입니다.
-    - `errorCode` : 오류 코드
-        - `-10` : 잘못된 앱 KEY
-        - `-11` : 잘못된 아이템 ID
-        - `-12` : 잘못된 구매 수량
-        - `그외` : 기타 오류
-    ```
-    - (void)NASWallPurchaseItemError:(NSString*)itemId count:(int)count errorCode:(int)errorCode;
-    ```
+*사용 예시*
+```swift
+NasWall.openCs { error in
+    if error == nil {
+        // 성공 시 처리 코드
+    } else {
+        // 실패 시 처리 코드
+    }
+} closeHandler: {
+    // 문의하기 종료 시 처리 코드
+}
+```
+
+## 💰 적립금
+
+### 🔹 *획득 가능 총 적립금 조회*
+획득 가능한 총 적립금을 조회합니다.
+
+*❗ Swift UI Preview 상태에서는 라이브 데이터가 아닌 Preview 전용 데이터가 조회됩니다.*
+
+```swift
+func totalPoint(
+    _ handler: @MainActor @escaping (NasWallPointInfo?, NSError?) - Void
+)
+```
+
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - [`NasWallPointInfo`](#-NasWallPointInfo): 조회 성공 시 적립금 정보가 제공됩니다.
+  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
+
+*사용 예시*
+```swift
+NasWall.totalPoint { pointInfo, error in
+    if error == nil {
+        // 성공 시 처리 코드
+    } else {
+        // 실패 시 처리 코드
+    }
+}
+```
+
+### 🔹 *보유 적립금 조회 (NAS 서버에서 적립금 관리 시 사용)*
+NAS 서버에서 적립금을 관리하는 경우, 회원이 보유한 적립금을 조회합니다.
+
+"적립금 관리 서버"가 "NAS 서버 사용"으로 설정된 경우에만 사용합니다.  "적립금 관리 서버" 설정은 NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 설정을 통해 확인 및 변경할 수 있습니다.
+
+*❗ Swift UI Preview 상태에서는 라이브 데이터가 아닌 Preview 전용 데이터가 조회됩니다.*   
+*❗ [초기화](#-초기화) 함수를 통해 지정한 `userId(회원 ID)` 를 기준으로 조회됩니다.*
+
+```swift
+func userPoint(
+    _ handler: @MainActor @escaping (NasWallPointInfo?, NSError?) - Void
+)
+```
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - [`NasWallPointInfo`](#-NasWallPointInfo): 조회 성공 시 적립금 정보가 제공됩니다.
+  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
+
+*사용 예시*
+```swift
+NasWall.userPoint { pointInfo, error in
+    if error == nil {
+        // 성공 시 처리 코드
+    } else {
+        // 실패 시 처리 코드
+    }
+}
+```
+
+### 🔹 *아이템 목록 조회 (NAS 서버에서 적립금 관리 시 사용)*
+NAS 서버에서 적립금을 관리하는 경우, 구입 가능한 아이템 목록을 조회합니다.
+
+"적립금 관리 서버"가 "NAS 서버 사용"으로 설정된 경우에만 사용합니다.  "적립금 관리 서버" 설정은 NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 설정을 통해 확인 및 변경할 수 있습니다.
+
+*❗ Swift UI Preview 상태에서는 라이브 데이터가 아닌 Preview 전용 데이터가 조회됩니다.*
+
+```swift
+func itemList(
+    _ handler: @MainActor @escaping (NasWallItemList?, NSError?) -> Void
+)
+```
+
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - [`NasWallItemList`](#-NasWallItemList): 조회 성공 시 아이템 목록이 제공됩니다.
+  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
+
+*사용 예시*
+```swift
+NasWall.itemList { itemList, error in
+    if error == nil {
+        // 성공 시 처리 코드
+    } else {
+        // 실패 시 처리 코드
+    }
+}
+```
+
+### 🔹 *아이템 구입 (NAS 서버에서 적립금 관리 시 사용)*
+NAS 서버에서 적립금을 관리하는 경우, 보유 적립금을 이용하여 아이템을 구입합니다.
+
+"적립금 관리 서버"가 "NAS 서버 사용"으로 설정된 경우에만 사용합니다.  "적립금 관리 서버" 설정은 NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 설정을 통해 확인 및 변경할 수 있습니다.
+
+*❗ Swift UI Preview 상태에서는 라이브 데이터가 아닌 Preview 전용 데이터가 조회됩니다.*   
+*❗ [초기화](#-초기화) 함수를 통해 지정한 `userId(회원 ID)` 를 기준으로 구입됩니다.*
+
+```swift
+func purchaseItem(
+    _ itemId: Int,
+    qty: Int,
+    handler: @MainActor @escaping (NasWallPointInfo?, NSError?) -> Void
+)
+```
+- `itemId`: 구입 할 아이템 ID를 지정합니다. NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 아이템을 등록하면, 아이템 ID를 확인할 수 있습니다.
+- `qty`: 구입 수량을 지정합니다.
+- `handler`: 처리 완료 시 호출되는 핸들러입니다.
+  - [`NasWallPointInfo`](#-NasWallPointInfo): 구입 성공 시 구입 금액을 차감한 잔여 적립금 정보가 제공됩니다.
+  - `NSError`: 구입 실패 시 오류 정보가 제공됩니다.
+
+*사용 예시*
+```swift
+NasWall.purchaseItem(itemId, qty: 1) { pointInfo, error in
+    if error == nil {
+        // 성공 시 실행 코드
+    } else {
+        // 실패 시 실행 코드
+    }
+}
+```
+
+## 📦 기타
+
+### 🔹 *테마 설정*
+테마(라이트/다크 모드)를 설정합니다. 팝업, 임베드 오퍼월 표시될 때, 설정한 테마를 기준으로 배경색이 표시됩니다.
+
+```swift
+func theme(_ theme: NasWallTheme)
+```
+
+- `theme`: 테마를 지정합니다.
+  - `.light`: 라이트 테마
+  - `.dark`: 다크 테마
+
+*사용 예시*
+```swift
+// 라이트 테마
+NasWall.theme(.light)
+
+// 다크 테마
+NasWall.theme(.dark)
+```
+
+### 🔹 *Preview 전용 데이터 로드 지연 시간(초) 설정*
+Swift UI Preview 모드에서 Preview 전용 데이터 로드 시 지연 시간(초)을 설정합니다.   
+Preview 상태에서 데이터 로드 시 로딩 화면 표시를 확인하기 위해 사용합니다.
+
+```swift
+func debugPreviewDataDelaySeconds(_ seconds: Double)
+```
+
+- `seconds`: 지연 시간(초)을 지정합니다.
+
+*사용 예시*
+ ```swift
+ NasWall.debugPreviewDataDelaySeconds(1)
+ ```
+
+### 🔹 *Preview 전용 데이터 로드 강제 실패 처리 여부 설정*
+Swift UI Preview 모드에서 Preview 전용 데이터 로드 시 강제로 실패 처리할지 여부를 설정합니다.   
+Preview 상태에서 데이터 로드 실패 시의 화면 표시를 확인하기 위해 사용합니다.
+
+```swift
+func debugPreviewDataForceFail(_ forceFail: Bool)
+```
+
+- `forceFail`: 강제 실패 여부를 지정합니다.
+
+*사용 예시*
+ ```swift
+ NasWall.debugPreviewDataForceFail(true)
+ ```
+
+## 📘 정의
+
+### 🔹 *NasWallAdListType*
+광고 목록 구분
+```swift
+enum NasWallAdListType: Int {
+    case basic = 0  // 참여적립 (CPI, CPE, CPA, CPC 등)
+    case cps = 1    // 쇼핑적립 (CPS)
+    case cpq = 2    // 퀴즈적립 (CPQ)
+}
+```
+
+### 🔹 *NasWallAdList*
+광고 목록
+```swift
+typealias NasWallAdList = [NasWallAdInfo]
+```
+
+### 🔹 *NasWallAdInfo*
+광고 정보
+```swift
+class NasWallAdInfo {
+    public let id: Int                          // ID
+    public let title: String                    // 광고명
+    public let missionText: String              // 미션
+    public let iconUrl: String                  // 아이콘 URL
+    public let adPrice: String                  // 참여 비용
+    public let rewardPrice: Int                 // 적립금
+    public let rewardUnit: String               // 적립금 단위
+    public let category: NasWallAdCategory      // 카테고리
+}
+```
+
+### 🔹 *NasWallPointInfo*
+적립금 정보
+```swift
+class NasWallPointInfo {
+    let point: Int           // 적립금
+    let unit: String         // 적립금 단위
+    let stringValue: String  // "(적립금)(단위)" 예)"35,270원"
+}
+```
+
+### 🔹 *NasWallItemList*
+아이템 목록
+```swift
+typealias NasWallItemList = [NasWallItemInfo]
+```
+
+### 🔹 *NasWallItemInfo*
+아이템 정보
+```swift
+class NasWallItemInfo {
+    let id: Int       // 아이템 ID
+    let name: String  // 아이템 이름
+    let price: Int    // 아이템 가격
+    let unit: String  // 가격 단위
+}
+```
+
+### 🔹 *NasWallTheme*
+테마
+```swift
+enum NasWallTheme: Int {
+    case light = 0  // 라이트 테마
+    case dark = 1   // 다크 테마
+}
+```
 
 ## 📖 다른 문서
 - [`내장 UI 개발 가이드`](Guide.Embed.md) : 미리 만들어진 UI를 사용하는 방식으로, 별도의 UI 개발 없이 쉽게 연동할 수 있습니다.

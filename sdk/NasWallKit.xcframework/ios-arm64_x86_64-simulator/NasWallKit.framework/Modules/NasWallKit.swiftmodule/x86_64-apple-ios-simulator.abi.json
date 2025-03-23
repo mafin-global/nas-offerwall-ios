@@ -1,0 +1,5294 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "NasWallKit",
+    "printedName": "NasWallKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWall",
+        "printedName": "NasWall",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(_:userData:testMode:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)initialize:userData:testMode:handler:",
+            "mangledName": "$s10NasWallKit0aB0C10initialize_8userData8testMode7handlerySS_SSSbySo7NSErrorCSgScMYccSgtFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(_:userId:testMode:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)initialize:userId:testMode:handler:",
+            "mangledName": "$s10NasWallKit0aB0C10initialize_6userId8testMode7handlerySS_SSSbySo7NSErrorCSgScMYccSgtFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "theme",
+            "printedName": "theme(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallTheme",
+                "printedName": "NasWallKit.NasWallTheme",
+                "usr": "c:@M@NasWallKit@E@NasWallTheme"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)theme:",
+            "mangledName": "$s10NasWallKit0aB0C5themeyyAA0aB5ThemeOFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openPopupOfferWall",
+            "printedName": "openPopupOfferWall(_:closeHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)openPopupOfferWall:closeHandler:",
+            "mangledName": "$s10NasWallKit0aB0C014openPopupOfferB0_12closeHandleryySo7NSErrorCSgScMYcc_yyScMYccSgtFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "embedOfferWall",
+            "printedName": "embedOfferWall(_:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)embedOfferWall:handler:",
+            "mangledName": "$s10NasWallKit0aB0C010embedOfferB0_7handlerySo6UIViewC_ySo7NSErrorCSgScMYcctFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "totalPoint",
+            "printedName": "totalPoint(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallPointInfo?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(NasWallKit.NasWallPointInfo?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "NasWallKit.NasWallPointInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NasWallPointInfo",
+                            "printedName": "NasWallKit.NasWallPointInfo",
+                            "usr": "c:@M@NasWallKit@objc(cs)NasWallPointInfo"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)totalPoint:",
+            "mangledName": "$s10NasWallKit0aB0C10totalPointyyyAA0abE4InfoCSg_So7NSErrorCSgtScMYccFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adList",
+            "printedName": "adList(_:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdListType",
+                "printedName": "NasWallKit.NasWallAdListType",
+                "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NasWallKit.NasWallAdInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NasWallKit.NasWallAdInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NasWallKit.NasWallAdInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NasWallKit.NasWallAdInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NasWallAdInfo",
+                                "printedName": "NasWallKit.NasWallAdInfo",
+                                "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)adList:handler:",
+            "mangledName": "$s10NasWallKit0aB0C6adList_7handleryAA0ab2AdE4TypeO_ySayAA0abG4InfoCGSg_So7NSErrorCSgtScMYcctFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDescription",
+            "printedName": "adDescription(_:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdInfo",
+                "printedName": "NasWallKit.NasWallAdInfo",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfo"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)adDescription:handler:",
+            "mangledName": "$s10NasWallKit0aB0C13adDescription_7handleryAA0aB6AdInfoC_ySSSg_So7NSErrorCSgtScMYcctFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "joinAd",
+            "printedName": "joinAd(_:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdInfo",
+                "printedName": "NasWallKit.NasWallAdInfo",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfo"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)joinAd:handler:",
+            "mangledName": "$s10NasWallKit0aB0C6joinAd_7handleryAA0abE4InfoC_ySo7NSErrorCSgScMYcctFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userPoint",
+            "printedName": "userPoint(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallPointInfo?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(NasWallKit.NasWallPointInfo?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "NasWallKit.NasWallPointInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NasWallPointInfo",
+                            "printedName": "NasWallKit.NasWallPointInfo",
+                            "usr": "c:@M@NasWallKit@objc(cs)NasWallPointInfo"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)userPoint:",
+            "mangledName": "$s10NasWallKit0aB0C9userPointyyyAA0abE4InfoCSg_So7NSErrorCSgtScMYccFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itemList",
+            "printedName": "itemList(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([NasWallKit.NasWallItemInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([NasWallKit.NasWallItemInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[NasWallKit.NasWallItemInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[NasWallKit.NasWallItemInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NasWallItemInfo",
+                                "printedName": "NasWallKit.NasWallItemInfo",
+                                "usr": "c:@M@NasWallKit@objc(cs)NasWallItemInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)itemList:",
+            "mangledName": "$s10NasWallKit0aB0C8itemListyyySayAA0aB8ItemInfoCGSg_So7NSErrorCSgtScMYccFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purchaseItem",
+            "printedName": "purchaseItem(_:qty:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallPointInfo?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(NasWallKit.NasWallPointInfo?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "NasWallKit.NasWallPointInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NasWallPointInfo",
+                            "printedName": "NasWallKit.NasWallPointInfo",
+                            "usr": "c:@M@NasWallKit@objc(cs)NasWallPointInfo"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)purchaseItem:qty:handler:",
+            "mangledName": "$s10NasWallKit0aB0C12purchaseItem_3qty7handlerySi_SiyAA0aB9PointInfoCSg_So7NSErrorCSgtScMYcctFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openCs",
+            "printedName": "openCs(_:closeHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)openCs:closeHandler:",
+            "mangledName": "$s10NasWallKit0aB0C6openCs_12closeHandleryySo7NSErrorCSgScMYcc_yyScMYccSgtFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debugPreviewDataDelaySeconds",
+            "printedName": "debugPreviewDataDelaySeconds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)debugPreviewDataDelaySeconds:",
+            "mangledName": "$s10NasWallKit0aB0C28debugPreviewDataDelaySecondsyySdFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debugPreviewDataForceFail",
+            "printedName": "debugPreviewDataForceFail(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)debugPreviewDataForceFail:",
+            "mangledName": "$s10NasWallKit0aB0C25debugPreviewDataForceFailyySbFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showLoading",
+            "printedName": "showLoading()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)showLoading",
+            "mangledName": "$s10NasWallKit0aB0C11showLoadingyyFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideLoading",
+            "printedName": "hideLoading()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(cm)hideLoading",
+            "mangledName": "$s10NasWallKit0aB0C11hideLoadingyyFZ",
+            "moduleName": "NasWallKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWall",
+                "printedName": "NasWallKit.NasWall",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWall"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWall(im)init",
+            "mangledName": "$s10NasWallKit0aB0CACycfc",
+            "moduleName": "NasWallKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NasWallKit@objc(cs)NasWall",
+        "mangledName": "$s10NasWallKit0aB0C",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallAdCategory",
+        "printedName": "NasWallAdCategory",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "app",
+            "printedName": "app",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdCategory.Type) -> NasWallKit.NasWallAdCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdCategory",
+                    "printedName": "NasWallKit.NasWallAdCategory",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdCategory",
+                        "printedName": "NasWallKit.NasWallAdCategory",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdCategory@NasWallAdCategoryApp",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO3appyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "sns",
+            "printedName": "sns",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdCategory.Type) -> NasWallKit.NasWallAdCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdCategory",
+                    "printedName": "NasWallKit.NasWallAdCategory",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdCategory",
+                        "printedName": "NasWallKit.NasWallAdCategory",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdCategory@NasWallAdCategorySns",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO3snsyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "web",
+            "printedName": "web",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdCategory.Type) -> NasWallKit.NasWallAdCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdCategory",
+                    "printedName": "NasWallKit.NasWallAdCategory",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdCategory",
+                        "printedName": "NasWallKit.NasWallAdCategory",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdCategory@NasWallAdCategoryWeb",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO3webyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "cps",
+            "printedName": "cps",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdCategory.Type) -> NasWallKit.NasWallAdCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdCategory",
+                    "printedName": "NasWallKit.NasWallAdCategory",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdCategory",
+                        "printedName": "NasWallKit.NasWallAdCategory",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdCategory@NasWallAdCategoryCps",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO3cpsyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "cpq",
+            "printedName": "cpq",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdCategory.Type) -> NasWallKit.NasWallAdCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdCategory",
+                    "printedName": "NasWallKit.NasWallAdCategory",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdCategory",
+                        "printedName": "NasWallKit.NasWallAdCategory",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdCategory@NasWallAdCategoryCpq",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO3cpqyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB10AdCategoryO2idSivp",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO2idSivp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB10AdCategoryO2idSivg",
+                "mangledName": "$s10NasWallKit0aB10AdCategoryO2idSivg",
+                "moduleName": "NasWallKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB10AdCategoryO4nameSSvp",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO4nameSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB10AdCategoryO4nameSSvg",
+                "mangledName": "$s10NasWallKit0aB10AdCategoryO4nameSSvg",
+                "moduleName": "NasWallKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NasWallKit.NasWallAdCategory?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdCategory",
+                    "printedName": "NasWallKit.NasWallAdCategory",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NasWallKit0aB10AdCategoryO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO8rawValueACSgSi_tcfc",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB10AdCategoryO8rawValueSivp",
+            "mangledName": "$s10NasWallKit0aB10AdCategoryO8rawValueSivp",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB10AdCategoryO8rawValueSivg",
+                "mangledName": "$s10NasWallKit0aB10AdCategoryO8rawValueSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NasWallKit@E@NasWallAdCategory",
+        "mangledName": "$s10NasWallKit0aB10AdCategoryO",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallAdInfo",
+        "printedName": "NasWallAdInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC2idSivp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC2idSivp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC2idSivg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC2idSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC5titleSSvp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC5titleSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC5titleSSvg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC5titleSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "missionText",
+            "printedName": "missionText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC11missionTextSSvp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC11missionTextSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC11missionTextSSvg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC11missionTextSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconUrl",
+            "printedName": "iconUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC7iconUrlSSvp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC7iconUrlSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC7iconUrlSSvg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC7iconUrlSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adPrice",
+            "printedName": "adPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC7adPriceSSvp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC7adPriceSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC7adPriceSSvg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC7adPriceSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rewardPrice",
+            "printedName": "rewardPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC11rewardPriceSivp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC11rewardPriceSivp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC11rewardPriceSivg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC11rewardPriceSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rewardUnit",
+            "printedName": "rewardUnit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC10rewardUnitSSvp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC10rewardUnitSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC10rewardUnitSSvg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC10rewardUnitSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdCategory",
+                "printedName": "NasWallKit.NasWallAdCategory",
+                "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC8categoryAA0abD8CategoryOvp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC8categoryAA0abD8CategoryOvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdCategory",
+                    "printedName": "NasWallKit.NasWallAdCategory",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdCategory"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC8categoryAA0abD8CategoryOvg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC8categoryAA0abD8CategoryOvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_internal",
+            "printedName": "_internal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdInfoInternal",
+                "printedName": "NasWallKit.NasWallAdInfoInternal",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfoInternal"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB6AdInfoC9_internalAA0abdE8InternalCvp",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC9_internalAA0abdE8InternalCvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdInfoInternal",
+                    "printedName": "NasWallKit.NasWallAdInfoInternal",
+                    "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfoInternal"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB6AdInfoC9_internalAA0abdE8InternalCvg",
+                "mangledName": "$s10NasWallKit0aB6AdInfoC9_internalAA0abdE8InternalCvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdInfo",
+                "printedName": "NasWallKit.NasWallAdInfo",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NasWallKit0aB6AdInfoC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10NasWallKit0aB6AdInfoC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Required",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdInfo",
+                "printedName": "NasWallKit.NasWallAdInfo",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfo(im)init",
+            "mangledName": "$s10NasWallKit0aB6AdInfoCACycfc",
+            "moduleName": "NasWallKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfo",
+        "mangledName": "$s10NasWallKit0aB6AdInfoC",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallAdInfoInternal",
+        "printedName": "NasWallAdInfoInternal",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallAdInfoInternal",
+                "printedName": "NasWallKit.NasWallAdInfoInternal",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfoInternal"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfoInternal(im)init",
+            "mangledName": "$s10NasWallKit0aB14AdInfoInternalCACycfc",
+            "moduleName": "NasWallKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NasWallKit@objc(cs)NasWallAdInfoInternal",
+        "mangledName": "$s10NasWallKit0aB14AdInfoInternalC",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallAdJoinStatus",
+        "printedName": "NasWallAdJoinStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "noJoin",
+            "printedName": "noJoin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdJoinStatus.Type) -> NasWallKit.NasWallAdJoinStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdJoinStatus",
+                    "printedName": "NasWallKit.NasWallAdJoinStatus",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdJoinStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdJoinStatus",
+                        "printedName": "NasWallKit.NasWallAdJoinStatus",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus@NasWallAdJoinStatusNoJoin",
+            "mangledName": "$s10NasWallKit0aB12AdJoinStatusO02noE0yA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "join",
+            "printedName": "join",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdJoinStatus.Type) -> NasWallKit.NasWallAdJoinStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdJoinStatus",
+                    "printedName": "NasWallKit.NasWallAdJoinStatus",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdJoinStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdJoinStatus",
+                        "printedName": "NasWallKit.NasWallAdJoinStatus",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus@NasWallAdJoinStatusJoin",
+            "mangledName": "$s10NasWallKit0aB12AdJoinStatusO4joinyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "complete",
+            "printedName": "complete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdJoinStatus.Type) -> NasWallKit.NasWallAdJoinStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdJoinStatus",
+                    "printedName": "NasWallKit.NasWallAdJoinStatus",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdJoinStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdJoinStatus",
+                        "printedName": "NasWallKit.NasWallAdJoinStatus",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus@NasWallAdJoinStatusComplete",
+            "mangledName": "$s10NasWallKit0aB12AdJoinStatusO8completeyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NasWallKit.NasWallAdJoinStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdJoinStatus",
+                    "printedName": "NasWallKit.NasWallAdJoinStatus",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NasWallKit0aB12AdJoinStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10NasWallKit0aB12AdJoinStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB12AdJoinStatusO8rawValueSivp",
+            "mangledName": "$s10NasWallKit0aB12AdJoinStatusO8rawValueSivp",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB12AdJoinStatusO8rawValueSivg",
+                "mangledName": "$s10NasWallKit0aB12AdJoinStatusO8rawValueSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NasWallKit@E@NasWallAdJoinStatus",
+        "mangledName": "$s10NasWallKit0aB12AdJoinStatusO",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallAdListType",
+        "printedName": "NasWallAdListType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "basic",
+            "printedName": "basic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdListType.Type) -> NasWallKit.NasWallAdListType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdListType",
+                    "printedName": "NasWallKit.NasWallAdListType",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdListType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdListType",
+                        "printedName": "NasWallKit.NasWallAdListType",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdListType@NasWallAdListTypeBasic",
+            "mangledName": "$s10NasWallKit0aB10AdListTypeO5basicyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "cps",
+            "printedName": "cps",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdListType.Type) -> NasWallKit.NasWallAdListType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdListType",
+                    "printedName": "NasWallKit.NasWallAdListType",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdListType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdListType",
+                        "printedName": "NasWallKit.NasWallAdListType",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdListType@NasWallAdListTypeCps",
+            "mangledName": "$s10NasWallKit0aB10AdListTypeO3cpsyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "cpq",
+            "printedName": "cpq",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallAdListType.Type) -> NasWallKit.NasWallAdListType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdListType",
+                    "printedName": "NasWallKit.NasWallAdListType",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallAdListType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallAdListType",
+                        "printedName": "NasWallKit.NasWallAdListType",
+                        "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallAdListType@NasWallAdListTypeCpq",
+            "mangledName": "$s10NasWallKit0aB10AdListTypeO3cpqyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NasWallKit.NasWallAdListType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallAdListType",
+                    "printedName": "NasWallKit.NasWallAdListType",
+                    "usr": "c:@M@NasWallKit@E@NasWallAdListType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NasWallKit0aB10AdListTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10NasWallKit0aB10AdListTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB10AdListTypeO8rawValueSivp",
+            "mangledName": "$s10NasWallKit0aB10AdListTypeO8rawValueSivp",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB10AdListTypeO8rawValueSivg",
+                "mangledName": "$s10NasWallKit0aB10AdListTypeO8rawValueSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NasWallKit@E@NasWallAdListType",
+        "mangledName": "$s10NasWallKit0aB10AdListTypeO",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallItemInfo",
+        "printedName": "NasWallItemInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB8ItemInfoC2idSivp",
+            "mangledName": "$s10NasWallKit0aB8ItemInfoC2idSivp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB8ItemInfoC2idSivg",
+                "mangledName": "$s10NasWallKit0aB8ItemInfoC2idSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB8ItemInfoC4nameSSvp",
+            "mangledName": "$s10NasWallKit0aB8ItemInfoC4nameSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB8ItemInfoC4nameSSvg",
+                "mangledName": "$s10NasWallKit0aB8ItemInfoC4nameSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB8ItemInfoC5priceSivp",
+            "mangledName": "$s10NasWallKit0aB8ItemInfoC5priceSivp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB8ItemInfoC5priceSivg",
+                "mangledName": "$s10NasWallKit0aB8ItemInfoC5priceSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unit",
+            "printedName": "unit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB8ItemInfoC4unitSSvp",
+            "mangledName": "$s10NasWallKit0aB8ItemInfoC4unitSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB8ItemInfoC4unitSSvg",
+                "mangledName": "$s10NasWallKit0aB8ItemInfoC4unitSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallItemInfo",
+                "printedName": "NasWallKit.NasWallItemInfo",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallItemInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NasWallKit0aB8ItemInfoC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10NasWallKit0aB8ItemInfoC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NasWallKit@objc(cs)NasWallItemInfo",
+        "mangledName": "$s10NasWallKit0aB8ItemInfoC",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallPointInfo",
+        "printedName": "NasWallPointInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "point",
+            "printedName": "point",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB9PointInfoC5pointSivp",
+            "mangledName": "$s10NasWallKit0aB9PointInfoC5pointSivp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB9PointInfoC5pointSivg",
+                "mangledName": "$s10NasWallKit0aB9PointInfoC5pointSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unit",
+            "printedName": "unit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB9PointInfoC4unitSSvp",
+            "mangledName": "$s10NasWallKit0aB9PointInfoC4unitSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB9PointInfoC4unitSSvg",
+                "mangledName": "$s10NasWallKit0aB9PointInfoC4unitSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB9PointInfoC11stringValueSSvp",
+            "mangledName": "$s10NasWallKit0aB9PointInfoC11stringValueSSvp",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB9PointInfoC11stringValueSSvg",
+                "mangledName": "$s10NasWallKit0aB9PointInfoC11stringValueSSvg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallPointInfo",
+                "printedName": "NasWallKit.NasWallPointInfo",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallPointInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NasWallKit0aB9PointInfoC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10NasWallKit0aB9PointInfoC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "Required",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NasWallPointInfo",
+                "printedName": "NasWallKit.NasWallPointInfo",
+                "usr": "c:@M@NasWallKit@objc(cs)NasWallPointInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NasWallKit@objc(cs)NasWallPointInfo(im)init",
+            "mangledName": "$s10NasWallKit0aB9PointInfoCACycfc",
+            "moduleName": "NasWallKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NasWallKit@objc(cs)NasWallPointInfo",
+        "mangledName": "$s10NasWallKit0aB9PointInfoC",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NasWallTheme",
+        "printedName": "NasWallTheme",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "light",
+            "printedName": "light",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallTheme.Type) -> NasWallKit.NasWallTheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallTheme",
+                    "printedName": "NasWallKit.NasWallTheme",
+                    "usr": "c:@M@NasWallKit@E@NasWallTheme"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallTheme.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallTheme",
+                        "printedName": "NasWallKit.NasWallTheme",
+                        "usr": "c:@M@NasWallKit@E@NasWallTheme"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallTheme@NasWallThemeLight",
+            "mangledName": "$s10NasWallKit0aB5ThemeO5lightyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "dark",
+            "printedName": "dark",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NasWallKit.NasWallTheme.Type) -> NasWallKit.NasWallTheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallTheme",
+                    "printedName": "NasWallKit.NasWallTheme",
+                    "usr": "c:@M@NasWallKit@E@NasWallTheme"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NasWallKit.NasWallTheme.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NasWallTheme",
+                        "printedName": "NasWallKit.NasWallTheme",
+                        "usr": "c:@M@NasWallKit@E@NasWallTheme"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NasWallKit@E@NasWallTheme@NasWallThemeDark",
+            "mangledName": "$s10NasWallKit0aB5ThemeO4darkyA2CmF",
+            "moduleName": "NasWallKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NasWallKit.NasWallTheme?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NasWallTheme",
+                    "printedName": "NasWallKit.NasWallTheme",
+                    "usr": "c:@M@NasWallKit@E@NasWallTheme"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NasWallKit0aB5ThemeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10NasWallKit0aB5ThemeO8rawValueACSgSi_tcfc",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NasWallKit0aB5ThemeO8rawValueSivp",
+            "mangledName": "$s10NasWallKit0aB5ThemeO8rawValueSivp",
+            "moduleName": "NasWallKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NasWallKit0aB5ThemeO8rawValueSivg",
+                "mangledName": "$s10NasWallKit0aB5ThemeO8rawValueSivg",
+                "moduleName": "NasWallKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NasWallKit@E@NasWallTheme",
+        "mangledName": "$s10NasWallKit0aB5ThemeO",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NasWallKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
+      "kind": "IntegerLiteral",
+      "offset": 119,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
+      "kind": "IntegerLiteral",
+      "offset": 148,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
+      "kind": "IntegerLiteral",
+      "offset": 177,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
+      "kind": "IntegerLiteral",
+      "offset": 206,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
+      "kind": "IntegerLiteral",
+      "offset": 235,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdJoinStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 102,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdJoinStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 147,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdJoinStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 191,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdListType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 131,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdListType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 175,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdListType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 219,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 55,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 73,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
+      "kind": "StringLiteral",
+      "offset": 460,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
+      "kind": "StringLiteral",
+      "offset": 486,
+      "length": 14,
+      "value": "\"ow.appang.kr\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 3,
+      "value": "443"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
+      "kind": "StringLiteral",
+      "offset": 548,
+      "length": 18,
+      "value": "\"\/api\/ow\/app\/init\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
+      "kind": "IntegerLiteral",
+      "offset": 818,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
+      "kind": "BooleanLiteral",
+      "offset": 910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
+      "kind": "BooleanLiteral",
+      "offset": 972,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiAdComplete.swift",
+      "kind": "BooleanLiteral",
+      "offset": 205,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiAdDescription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 244,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiAdJoin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 208,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiAdList.swift",
+      "kind": "BooleanLiteral",
+      "offset": 166,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiAdListMoney.swift",
+      "kind": "BooleanLiteral",
+      "offset": 148,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiInit.swift",
+      "kind": "Array",
+      "offset": 1461,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiInit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1500,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiItemList.swift",
+      "kind": "BooleanLiteral",
+      "offset": 143,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiPurchaseItem.swift",
+      "kind": "BooleanLiteral",
+      "offset": 175,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiUserPoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 146,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Common.swift",
+      "kind": "StringLiteral",
+      "offset": 133,
+      "length": 18,
+      "value": "\"com.nextapps.nas\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Common.swift",
+      "kind": "StringLiteral",
+      "offset": 186,
+      "length": 22,
+      "value": "\"com.nextapps.nas.ifa\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Common.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3622,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Debug.swift",
+      "kind": "StringLiteral",
+      "offset": 90,
+      "length": 28,
+      "value": "\"XCODE_RUNNING_FOR_PREVIEWS\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Debug.swift",
+      "kind": "StringLiteral",
+      "offset": 123,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Device.swift",
+      "kind": "IntegerLiteral",
+      "offset": 213,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Device.swift",
+      "kind": "IntegerLiteral",
+      "offset": 217,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Env.swift",
+      "kind": "BooleanLiteral",
+      "offset": 252,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Env.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Env.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Env.swift",
+      "kind": "BooleanLiteral",
+      "offset": 344,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Env.swift",
+      "kind": "IntegerLiteral",
+      "offset": 835,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Env.swift",
+      "kind": "BooleanLiteral",
+      "offset": 935,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Common\/Sdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37,
+      "length": 4,
+      "value": "1009"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 96,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 146,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 225,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 261,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 57,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 100,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 139,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 168,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 197,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 250,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 124,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 182,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 307,
+      "length": 2,
+      "value": "31"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
+      "length": 2,
+      "value": "41"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 380,
+      "length": 2,
+      "value": "42"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 410,
+      "length": 2,
+      "value": "51"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 477,
+      "length": 2,
+      "value": "61"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
+      "kind": "IntegerLiteral",
+      "offset": 541,
+      "length": 2,
+      "value": "71"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 43,
+      "length": 4,
+      "value": "-999"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 72,
+      "length": 4,
+      "value": "-998"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 103,
+      "length": 4,
+      "value": "-997"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 137,
+      "length": 4,
+      "value": "-996"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 173,
+      "length": 4,
+      "value": "-995"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 4,
+      "value": "-994"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 4,
+      "value": "-993"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 275,
+      "length": 4,
+      "value": "-992"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 307,
+      "length": 4,
+      "value": "-100"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 343,
+      "length": 4,
+      "value": "-101"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 374,
+      "length": 4,
+      "value": "-102"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 4,
+      "value": "-103"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 446,
+      "length": 4,
+      "value": "-104"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 480,
+      "length": 4,
+      "value": "-105"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 510,
+      "length": 4,
+      "value": "-106"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 540,
+      "length": 4,
+      "value": "-107"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 574,
+      "length": 4,
+      "value": "-108"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 604,
+      "length": 4,
+      "value": "-109"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 636,
+      "length": 4,
+      "value": "-110"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 676,
+      "length": 4,
+      "value": "-111"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 706,
+      "length": 4,
+      "value": "-112"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 742,
+      "length": 4,
+      "value": "-113"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 776,
+      "length": 4,
+      "value": "-114"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 804,
+      "length": 4,
+      "value": "-115"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
+      "kind": "IntegerLiteral",
+      "offset": 78,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
+      "kind": "IntegerLiteral",
+      "offset": 136,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
+      "kind": "IntegerLiteral",
+      "offset": 175,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
+      "kind": "IntegerLiteral",
+      "offset": 221,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
+      "kind": "IntegerLiteral",
+      "offset": 378,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 45,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 74,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 103,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 126,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 143,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/TimeChargeType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 77,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/TimeChargeType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 141,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/TimeChargeType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 238,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Extendsions\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 74,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Extendsions\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 355,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Loading\/Loading.swift",
+      "kind": "BooleanLiteral",
+      "offset": 132,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Loading\/Loading.swift",
+      "kind": "Array",
+      "offset": 192,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Loading\/LoadingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 97,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/Modal.swift",
+      "kind": "BooleanLiteral",
+      "offset": 160,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/Modal.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1051,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 159,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1377,
+      "length": 34,
+      "value": "\"2423ec55361bde390abf92b79e8c9c07\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 14,
+      "value": "\"참여하기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1479,
+      "length": 8,
+      "value": "0xD6500A"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1509,
+      "length": 8,
+      "value": "0xFFFFFF"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1535,
+      "length": 33,
+      "value": "\"판타지타운(레벨27달성)\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1577,
+      "length": 7,
+      "value": "\"price\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1595,
+      "length": 35,
+      "value": "\"다운로드 후 실행하세요.\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1640,
+      "length": 8,
+      "value": "\"100원\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1664,
+      "length": 80,
+      "value": "\"https:\/\/nextapps-nas.aws.appang.kr\/icon\/20230809132818555165063_1691555309.png\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1766,
+      "length": 14,
+      "value": "\"참여하기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1871,
+      "length": 14,
+      "value": "\"참여하기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 1921,
+      "length": 8,
+      "value": "\"닫기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2001,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Modal\/ModalView.swift",
+      "kind": "StringLiteral",
+      "offset": 2035,
+      "length": 15,
+      "value": "\"모달 닫힘\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/ErrorRetry.swift",
+      "kind": "StringLiteral",
+      "offset": 1160,
+      "length": 48,
+      "value": "\"예상치 못한 문제가 발생했습니다.\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/ErrorRetry.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1440,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/ErrorRetry.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1532,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/ErrorRetry.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2356,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/ErrorRetry.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2845,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/Icon.swift",
+      "kind": "StringLiteral",
+      "offset": 557,
+      "length": 6,
+      "value": "\"Icon\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/Icon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 591,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/Icon.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 80,
+      "value": "\"https:\/\/nextapps-nas.aws.appang.kr\/icon\/20230809132818555165063_1691555309.png\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/Icon.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 80,
+      "value": "\"https:\/\/nextapps-nas.aws.appang.kr\/icon\/20230809132818555165063_1691555309.png\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/Icon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 802,
+      "length": 3,
+      "value": "114"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/MyButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/MyButton.swift",
+      "kind": "StringLiteral",
+      "offset": 1584,
+      "length": 8,
+      "value": "\"Button\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/MyButton.swift",
+      "kind": "StringLiteral",
+      "offset": 1611,
+      "length": 16,
+      "value": "\"Button pressed\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/MyButton.swift",
+      "kind": "StringLiteral",
+      "offset": 1657,
+      "length": 8,
+      "value": "\"Button\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/MyButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1676,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/MyButton.swift",
+      "kind": "StringLiteral",
+      "offset": 1699,
+      "length": 16,
+      "value": "\"Button pressed\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/PreviewNavigationView.swift",
+      "kind": "StringLiteral",
+      "offset": 1310,
+      "length": 23,
+      "value": "\"PreviewNavigationView\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/@Common\/PreviewNavigationView.swift",
+      "kind": "StringLiteral",
+      "offset": 1350,
+      "length": 9,
+      "value": "\"Content\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "FloatLiteral",
+      "offset": 237,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "FloatLiteral",
+      "offset": 280,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1030,
+      "length": 8,
+      "value": "0xD6500A"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6318,
+      "length": 34,
+      "value": "\"2423ec55361bde390abf92b79e8c9c07\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6367,
+      "length": 14,
+      "value": "\"참여하기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6420,
+      "length": 8,
+      "value": "0xD6500A"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6450,
+      "length": 8,
+      "value": "0xFFFFFF"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6476,
+      "length": 33,
+      "value": "\"판타지타운(레벨27달성)\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6518,
+      "length": 7,
+      "value": "\"price\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6536,
+      "length": 35,
+      "value": "\"다운로드 후 실행하세요.\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6581,
+      "length": 8,
+      "value": "\"100원\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6605,
+      "length": 80,
+      "value": "\"https:\/\/nextapps-nas.aws.appang.kr\/icon\/20230809132818555165063_1691555309.png\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6707,
+      "length": 14,
+      "value": "\"참여하기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6812,
+      "length": 14,
+      "value": "\"참여하기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/AdDetailView\/OfferWallAdDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 6862,
+      "length": 8,
+      "value": "\"닫기\""
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/EmbedView\/EmbedOfferWallView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 200,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/EmbedView\/EmbedOfferWallView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 247,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/PopupView\/PopupOfferWallView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 200,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/PopupView\/PopupOfferWallView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 247,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/WebView\/OfferWallWebViewContainerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 344,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Views\/WebView\/OfferWallWebViewContainerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 391,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

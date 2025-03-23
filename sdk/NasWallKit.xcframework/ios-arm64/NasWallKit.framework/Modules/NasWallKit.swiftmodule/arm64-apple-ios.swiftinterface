@@ -1,0 +1,143 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NasWallKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AdSupport
+import AppTrackingTransparency
+import CryptoKit
+import Foundation
+@_exported import NasWallKit
+import OSLog
+import Security
+import Swift
+import SwiftUI
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class NasWall : ObjectiveC.NSObject {
+  @objc public static func initialize(_ appKey: Swift.String, userData: Swift.String, testMode: Swift.Bool, handler: (@_Concurrency.MainActor (Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(_ appKey: Swift.String, userId: Swift.String, testMode: Swift.Bool, handler: (@_Concurrency.MainActor (Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func theme(_ theme: NasWallKit.NasWallTheme)
+  @objc public static func openPopupOfferWall(_ handler: @escaping @_Concurrency.MainActor (Foundation.NSError?) -> Swift.Void, closeHandler: (@_Concurrency.MainActor () -> Swift.Void)? = nil)
+  @objc public static func embedOfferWall(_ parent: UIKit.UIView, handler: @escaping @_Concurrency.MainActor (Foundation.NSError?) -> Swift.Void)
+  @objc public static func totalPoint(_ handler: @escaping @_Concurrency.MainActor (NasWallKit.NasWallPointInfo?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func adList(_ listType: NasWallKit.NasWallAdListType, handler: @escaping @_Concurrency.MainActor (NasWallKit.NasWallAdList?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func adDescription(_ adInfo: NasWallKit.NasWallAdInfo, handler: @escaping @_Concurrency.MainActor (Swift.String?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func joinAd(_ adInfo: NasWallKit.NasWallAdInfo, handler: @escaping @_Concurrency.MainActor (Foundation.NSError?) -> Swift.Void)
+  @objc public static func userPoint(_ handler: @escaping @_Concurrency.MainActor (NasWallKit.NasWallPointInfo?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func itemList(_ handler: @escaping @_Concurrency.MainActor (NasWallKit.NasWallItemList?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func purchaseItem(_ itemId: Swift.Int, qty: Swift.Int, handler: @escaping @_Concurrency.MainActor (NasWallKit.NasWallPointInfo?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func openCs(_ handler: @escaping @_Concurrency.MainActor (Foundation.NSError?) -> Swift.Void, closeHandler: (@_Concurrency.MainActor () -> Swift.Void)? = nil)
+  @objc public static func debugPreviewDataDelaySeconds(_ seconds: Swift.Double)
+  @objc public static func debugPreviewDataForceFail(_ forceFail: Swift.Bool)
+  @objc public static func showLoading()
+  @objc public static func hideLoading()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum NasWallAdCategory : Swift.Int, Swift.Decodable, Swift.Identifiable {
+  case app = 1
+  case sns = 2
+  case web = 3
+  case cps = 4
+  case cpq = 5
+  public var id: Swift.Int {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias ID = Swift.Int
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias NasWallAdList = [NasWallKit.NasWallAdInfo]
+@objc public class NasWallAdInfo : ObjectiveC.NSObject, Swift.Identifiable, Swift.Decodable {
+  final public let id: Swift.Int
+  final public let title: Swift.String
+  final public let missionText: Swift.String
+  final public let iconUrl: Swift.String
+  final public let adPrice: Swift.String
+  final public let rewardPrice: Swift.Int
+  final public let rewardUnit: Swift.String
+  final public let category: NasWallKit.NasWallAdCategory
+  final public let _internal: NasWallKit.NasWallAdInfoInternal
+  required public init(from decoder: any Swift.Decoder) throws
+  public typealias ID = Swift.Int
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class NasWallAdInfoInternal : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc public enum NasWallAdJoinStatus : Swift.Int, Swift.Decodable {
+  case noJoin = 0
+  case join = 1
+  case complete = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NasWallAdListType : Swift.Int {
+  case basic = 0
+  case cps = 1
+  case cpq = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias NasWallItemList = [NasWallKit.NasWallItemInfo]
+@objc public class NasWallItemInfo : ObjectiveC.NSObject, Swift.Identifiable, Swift.Decodable {
+  final public let id: Swift.Int
+  final public let name: Swift.String
+  final public let price: Swift.Int
+  final public let unit: Swift.String
+  public typealias ID = Swift.Int
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class NasWallPointInfo : ObjectiveC.NSObject, Swift.Decodable {
+  final public let point: Swift.Int
+  final public let unit: Swift.String
+  final public let stringValue: Swift.String
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+@objc public enum NasWallTheme : Swift.Int {
+  case light = 0
+  case dark = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+
+
+
+
+
+
+
+
+
+
+extension NasWallKit.NasWallAdCategory : Swift.Equatable {}
+extension NasWallKit.NasWallAdCategory : Swift.Hashable {}
+extension NasWallKit.NasWallAdCategory : Swift.RawRepresentable {}
+extension NasWallKit.NasWallAdJoinStatus : Swift.Equatable {}
+extension NasWallKit.NasWallAdJoinStatus : Swift.Hashable {}
+extension NasWallKit.NasWallAdJoinStatus : Swift.RawRepresentable {}
+extension NasWallKit.NasWallAdListType : Swift.Equatable {}
+extension NasWallKit.NasWallAdListType : Swift.Hashable {}
+extension NasWallKit.NasWallAdListType : Swift.RawRepresentable {}
+extension NasWallKit.NasWallTheme : Swift.Equatable {}
+extension NasWallKit.NasWallTheme : Swift.Hashable {}
+extension NasWallKit.NasWallTheme : Swift.RawRepresentable {}

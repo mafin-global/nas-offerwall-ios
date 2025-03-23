@@ -1,0 +1,11 @@
+framework module NasWallKit {
+  umbrella header "NasWallKit.h"
+  export *
+
+  module * { export * }
+}
+
+module NasWallKit.Swift {
+  header "NasWallKit-Swift.h"
+  requires objc
+}
