@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C85E12792D90799D0066B9B2 /* NasWallKit in Frameworks */ = {isa = PBXBuildFile; productRef = C85E12782D90799D0066B9B2 /* NasWallKit */; };
 		C8C65E512D9072A700F68580 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C65E502D9072A700F68580 /* AppTrackingTransparency.framework */; };
 		C8C65E532D9072AB00F68580 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C65E522D9072AB00F68580 /* AdSupport.framework */; };
 		C8C65E552D9072B100F68580 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C65E542D9072B100F68580 /* Security.framework */; };
@@ -38,6 +39,7 @@
 				C8C65E552D9072B100F68580 /* Security.framework in Frameworks */,
 				C8C65E532D9072AB00F68580 /* AdSupport.framework in Frameworks */,
 				C8C65E512D9072A700F68580 /* AppTrackingTransparency.framework in Frameworks */,
+				C85E12792D90799D0066B9B2 /* NasWallKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,7 @@
 			);
 			name = NasWallKitSwiftExample;
 			packageProductDependencies = (
+				C85E12782D90799D0066B9B2 /* NasWallKit */,
 			);
 			productName = NasWallKitSwiftExample;
 			productReference = C8C2134A2D89D0EA0077ED40 /* NasWallKitSwiftExample.app */;
@@ -121,6 +124,9 @@
 			);
 			mainGroup = C8C213412D89D0EA0077ED40;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C85E12772D90799D0066B9B2 /* XCRemoteSwiftPackageReference "nas-offerwall-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C8C2134B2D89D0EA0077ED40 /* Products */;
 			projectDirPath = "";
@@ -363,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C85E12772D90799D0066B9B2 /* XCRemoteSwiftPackageReference "nas-offerwall-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mafin-global/nas-offerwall-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C85E12782D90799D0066B9B2 /* NasWallKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C85E12772D90799D0066B9B2 /* XCRemoteSwiftPackageReference "nas-offerwall-ios" */;
+			productName = NasWallKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8C213422D89D0EA0077ED40 /* Project object */;
 }
