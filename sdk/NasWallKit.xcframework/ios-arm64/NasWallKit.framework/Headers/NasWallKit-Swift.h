@@ -341,7 +341,7 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \param handler 초기화 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     NSError: 초기화 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 초기화 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -371,7 +371,7 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NSError</code>: 초기화 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 초기화 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -403,7 +403,7 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \endcode\param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NSError</code>: 오퍼월 열기 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 오퍼월 열기 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -439,7 +439,7 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NSError</code>: 오퍼월 표시 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 오퍼월 표시 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -457,10 +457,10 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \endcode\param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NasWallPointInfo</code>: 조회 성공 시 적립금 정보가 제공됩니다.
+///     <code>pointInfo</code>: 조회 성공 시 적립금 정보가 제공됩니다.
 ///   </li>
 ///   <li>
-///     <code>NSError</code>: 조회 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 조회 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -493,10 +493,10 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NasWallAdList</code>: 조회 성공 시 광고 목록이 제공됩니다.
+///     <code>adList</code>: 조회 성공 시 광고 목록이 제공됩니다.
 ///   </li>
 ///   <li>
-///     <code>NSError</code>: 조회 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 조회 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -518,10 +518,10 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>String</code>: 조회 성공 시 광고 상세 정보가 제공됩니다.
+///     <code>description</code>: 조회 성공 시 광고 상세 정보가 제공됩니다.
 ///   </li>
 ///   <li>
-///     <code>NSError</code>: 조회 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 조회 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -543,7 +543,7 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NSError</code>: 참여 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 참여 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -566,10 +566,10 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \endcode\param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NasWallPointInfo</code>: 조회 성공 시 적립금 정보가 제공됩니다.
+///     <code>pointInfo</code>: 조회 성공 시 적립금 정보가 제공됩니다.
 ///   </li>
 ///   <li>
-///     <code>NSError</code>: 조회 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 조회 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -590,10 +590,10 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \endcode\param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NasWallItemList</code>: 조회 성공 시 아이템 목록이 제공됩니다.
+///     <code>itemList</code>: 조회 성공 시 아이템 목록이 제공됩니다.
 ///   </li>
 ///   <li>
-///     <code>NSError</code>: 조회 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 조회 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -620,10 +620,10 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NasWallPointInfo</code>: 구입 성공 시 구입 금액을 차감한 잔여 적립금 정보가 제공됩니다.
+///     <code>pointInfo</code>: 구입 성공 시 구입 금액을 차감한 잔여 적립금 정보가 제공됩니다.
 ///   </li>
 ///   <li>
-///     <code>NSError</code>: 구입 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 구입 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///
@@ -644,7 +644,7 @@ SWIFT_CLASS("_TtC10NasWallKit7NasWall")
 /// \endcode\param handler 처리 완료 시 호출되는 핸들러입니다.
 /// <ul>
 ///   <li>
-///     <code>NSError</code>: 문의하기 열기 실패 시 오류 정보가 제공됩니다.
+///     <code>error</code>: 문의하기 열기 실패 시 오류 정보가 제공됩니다.
 ///   </li>
 /// </ul>
 ///

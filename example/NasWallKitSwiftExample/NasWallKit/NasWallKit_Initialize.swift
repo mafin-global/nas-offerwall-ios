@@ -3,7 +3,7 @@ import SwiftUI
 
 /// 초기화 - NasWallKit 연동
 class NasWallKit_Initialize: NasWallKit_Base<Any?> {
-    func loadData(_ animation: Animation? = nil, handler: (@MainActor (NSError?) -> Void)? = nil) {
+    func loadData(_ animation: Animation? = nil, handler: (@MainActor (_ error: NSError?) -> Void)? = nil) {
         loading(animation: animation)
 
         switch NasWallKit_Env.shared.serverType {

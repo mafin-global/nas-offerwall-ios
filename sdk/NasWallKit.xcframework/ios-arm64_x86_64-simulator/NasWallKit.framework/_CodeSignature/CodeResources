@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/NasWallKit-Swift.h</key>
 		<data>
-		EG0fy3WhpF0TfwQCMjYb5NG5MRg=
+		R8YjM0lxqrlOUSKjIbvt+gOM/iw=
 		</data>
 		<key>Headers/NasWallKit.h</key>
 		<data>
@@ -42,43 +42,43 @@
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		G6GdM9+5v5PL5DnD5YiVimysvjQ=
+		HsqqxIowuLGQdkHJbsrZ0cI9oTQ=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dNA5JsNs9A6pLnVqdVWWZDVMCt4=
+		V1LaHGwVqW2J+8iNVM8y83C781o=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kAHt/NgNaxIQ+AckeLp4+y8HsbU=
+		+PnWbqdUGoq48kt6misoYl7pd9U=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dNA5JsNs9A6pLnVqdVWWZDVMCt4=
+		V1LaHGwVqW2J+8iNVM8y83C781o=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		A+raHMXzEKKFVpZNKqjldj4ZqRw=
+		QA/NbQFNNr8SDhNnkuInO7Az2FQ=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		G6GdM9+5v5PL5DnD5YiVimysvjQ=
+		HsqqxIowuLGQdkHJbsrZ0cI9oTQ=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		06HeFLch8rsfsJYJ4MsrorGiobs=
+		oQ3Pkw/PN4WVAVmIUtaeiui6Xzc=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		EqYZkKIQKXxtyPoFH8pwkFx4K44=
+		Bwm4D/NvYO4JyM232VvjQZg9Ak0=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		06HeFLch8rsfsJYJ4MsrorGiobs=
+		oQ3Pkw/PN4WVAVmIUtaeiui6Xzc=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AASK/h+6xuXJtqY7y5kV1GiJgC0=
+		Elada53z9ZpDjWVHdiUcDjbxIVo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -130,7 +130,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vjEVSTbpC8Gk/VOvz7KIEBsAQNT5L8RmH7y64NHv+L0=
+			ID2Lhzgis1h9NoGiyt7hmrtzJny9dgqExfwgLwfoH+4=
 			</data>
 		</dict>
 		<key>Headers/NasWallKit.h</key>
@@ -151,70 +151,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fTjIHeazKAqG8h6lI38NlwiGsvw8KmD6syTb1E6pC8w=
+			QIsYll+8CZuL68hc8ORI/GFsyt09vAMACv8DFk9sHJc=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eP5tOBp24pEg0Cc6bVR12tfCIbTvAGJ39DYsqCW/gYM=
+			6CkIzThFA9SzOMZpj9kIpDaFRdTv9+F3ZjVwhdj2iGU=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eaqESwhI6DP1nepeeolKiKpHbFwgooEXzSfcFQKVgnM=
+			euJZA3ldhdIea8nwoEy/PH9FXZc4BZFri1kFoNijxRY=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eP5tOBp24pEg0Cc6bVR12tfCIbTvAGJ39DYsqCW/gYM=
+			6CkIzThFA9SzOMZpj9kIpDaFRdTv9+F3ZjVwhdj2iGU=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5f5n3goxN1Oz7CATOz7KdVkb5gk9Oa6GCD9ed8fesKY=
+			XVAPUOZVl9im0GfvE6H5guGntMJ3kG/HYB4m8SxTE9I=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fTjIHeazKAqG8h6lI38NlwiGsvw8KmD6syTb1E6pC8w=
+			QIsYll+8CZuL68hc8ORI/GFsyt09vAMACv8DFk9sHJc=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5AH2yMoLfjrcpcmL9ZfTvgCrxu3aljO5bONT04jMN40=
+			4kzYb4BTmKCYrBjky3FCTewbHsu44FK3DZ6LW06xNAc=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			84p9Sshzb1QupKrj2Dpfwh7aDp8InSRFvSTXjZYsQuU=
+			ZDhzS76ZjIx14ydJV2ZGCnrNn7kUAs5uIDlqgV11tSY=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5AH2yMoLfjrcpcmL9ZfTvgCrxu3aljO5bONT04jMN40=
+			4kzYb4BTmKCYrBjky3FCTewbHsu44FK3DZ6LW06xNAc=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iTd0lpGqFtowoeNioCJ6SoGtdcVw3njjMekAgoZaIuA=
+			wiMbPo8LXu6LpCxEOQJUmOVuQnlymWoQnkNaqQ+RttM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -27,7 +27,7 @@ class NasWallKit_Base<T>: Log, ObservableObject {
     }
 
     /// 성공 처리
-    func success(_ data: T?, animation: Animation? = nil, functionName _: String = #function, handler: (@MainActor (NSError?) -> Void)?) {
+    func success(_ data: T?, animation: Animation? = nil, functionName _: String = #function, handler: (@MainActor (_ error: NSError?) -> Void)?) {
         internalWithAnimation(animation) {
             self.status = .success
             self.error = nil
@@ -37,7 +37,7 @@ class NasWallKit_Base<T>: Log, ObservableObject {
     }
 
     /// 실패 처리
-    func fail(_ error: NSError, animation: Animation? = nil, functionName: String = #function, handler: (@MainActor (NSError?) -> Void)?) {
+    func fail(_ error: NSError, animation: Animation? = nil, functionName: String = #function, handler: (@MainActor (_ error: NSError?) -> Void)?) {
         internalWithAnimation(animation) {
             self.status = .fail
             self.error = error

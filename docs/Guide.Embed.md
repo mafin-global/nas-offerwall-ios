@@ -111,7 +111,7 @@ func initialize(
     _ appKey: String,
     userData: String,
     testMode: Bool,
-    handler: (@MainActor (NSError?) -> Void)? = nil
+    handler: (@MainActor (_ error: NSError?) -> Void)? = nil
 )
 ```
 
@@ -119,7 +119,7 @@ func initialize(
 - `userData`: 회원 ID 등의 적립금 지급에 필요한 고유한 회원 정보를 지정합니다. 광고 참여 완료 시 개발자 서버로 콜백 호출될 때 함께 제공됩니다.
 - `testMode`: `true` 로 설정 시 테스트 광고가 표시됩니다.
 - `handler`: 초기화 처리 완료 시 호출되는 핸들러입니다.
-  - `NSError`: 초기화 실패 시 오류 정보가 제공됩니다.
+  - `error`: 초기화 실패 시 오류 정보가 제공됩니다.
 
 *사용 예시*
 ```swift
@@ -138,7 +138,7 @@ func initialize(
     _ appKey: String,
     userId: String,
     testMode: Bool,
-    handler: (@MainActor (NSError?) - Void)? = nil
+    handler: (@MainActor (_ error: NSError?) - Void)? = nil
 )
 ```
 
@@ -146,7 +146,7 @@ func initialize(
 - `userId`: 회원의 고유한 ID를 지정합니다. "적립금 조회", "아이템 구입" 시 여기서 지정한 회원 ID를 기준으로 적용됩니다.
 - `testMode`: `true` 로 설정 시 테스트 광고가 표시됩니다.
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - `NSError`: 초기화 실패 시 오류 정보가 제공됩니다.
+  - `error`: 초기화 실패 시 오류 정보가 제공됩니다.
 
 *사용 예시*
 ```swift
@@ -167,13 +167,13 @@ NasWall.initialize("32자리 앱 KEY", userId: "회원 ID", testMode: false) { e
 
 ```swift
 func openPopupOfferWall(
-    _ handler: @MainActor @escaping (NSError?) - Void,
+    _ handler: @MainActor @escaping (_ error: NSError?) - Void,
     closeHandler: (@MainActor () - Void)? = nil
 )
 ```
 
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - `NSError`: 오퍼월 열기 실패 시 오류 정보가 제공됩니다.
+  - `error`: 오퍼월 열기 실패 시 오류 정보가 제공됩니다.
 - `closeHandler`: 오퍼월이 종료된 후 호출되는 핸들러입니다.
 
 *사용 예시*
@@ -194,12 +194,12 @@ NasWall.openPopupOfferWall { error in
 ```swift
 func openPopupOfferWall(
     _ parent: UIView,
-    handler: @MainActor @escaping (NSError?) - Void
+    handler: @MainActor @escaping (_ error: NSError?) - Void
 )
 ```
 
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - `NSError`: 오퍼월 열기 실패 시 오류 정보가 제공됩니다.
+  - `error`: 오퍼월 열기 실패 시 오류 정보가 제공됩니다.
 - `closeHandler`: 오퍼월이 종료된 후 호출되는 핸들러입니다.
 
 *사용 예시*
@@ -235,13 +235,13 @@ VStack {
 
 ```swift
 func openCs(
-    _ handler: @MainActor @escaping (NSError?) -> Void,
+    _ handler: @MainActor @escaping (_ error: NSError?) -> Void,
     closeHandler: (@MainActor () -> Void)? = nil
 )
 ```
 
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - `NSError`: 문의하기 열기 실패 시 오류 정보가 제공됩니다.
+  - `error`: 문의하기 열기 실패 시 오류 정보가 제공됩니다.
 - `closeHandler`: 문의하기가 종료된 후 호출되는 핸들러입니다.
 
 *사용 예시*
@@ -266,13 +266,13 @@ NasWall.openCs { error in
 
 ```swift
 func totalPoint(
-    _ handler: @MainActor @escaping (NasWallPointInfo?, NSError?) - Void
+    _ handler: @MainActor @escaping (_ pointInfo: NasWallPointInfo?, _ error: NSError?) - Void
 )
 ```
 
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - [`NasWallPointInfo`](#-NasWallPointInfo): 조회 성공 시 적립금 정보가 제공됩니다.
-  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
+  - `pointInfo`: 조회 성공 시 적립금 정보가 제공됩니다.
+  - `error`: 조회 실패 시 오류 정보가 제공됩니다.
 
 *사용 예시*
 ```swift
@@ -295,12 +295,12 @@ NAS 서버에서 적립금을 관리하는 경우, 회원이 보유한 적립금
 
 ```swift
 func userPoint(
-    _ handler: @MainActor @escaping (NasWallPointInfo?, NSError?) - Void
+    _ handler: @MainActor @escaping (_ pointInfo: NasWallPointInfo?, _ error: NSError?) - Void
 )
 ```
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - [`NasWallPointInfo`](#-NasWallPointInfo): 조회 성공 시 적립금 정보가 제공됩니다.
-  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
+  - `pointInfo`: 조회 성공 시 적립금 정보가 제공됩니다.
+  - `error`: 조회 실패 시 오류 정보가 제공됩니다.
 
 *사용 예시*
 ```swift
@@ -322,13 +322,13 @@ NAS 서버에서 적립금을 관리하는 경우, 구입 가능한 아이템 �
 
 ```swift
 func itemList(
-    _ handler: @MainActor @escaping (NasWallItemList?, NSError?) -> Void
+    _ handler: @MainActor @escaping (_ itemList: NasWallItemList?, _ error: NSError?) -> Void
 )
 ```
 
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - [`NasWallItemList`](#-NasWallItemList): 조회 성공 시 아이템 목록이 제공됩니다.
-  - `NSError`: 조회 실패 시 오류 정보가 제공됩니다.
+  - `itemList`: 조회 성공 시 아이템 목록이 제공됩니다.
+  - `error`: 조회 실패 시 오류 정보가 제공됩니다.
 
 *사용 예시*
 ```swift
@@ -353,14 +353,14 @@ NAS 서버에서 적립금을 관리하는 경우, 보유 적립금을 이용하
 func purchaseItem(
     _ itemId: Int,
     qty: Int,
-    handler: @MainActor @escaping (NasWallPointInfo?, NSError?) -> Void
+    handler: @MainActor @escaping (_ pointInfo: NasWallPointInfo?, _ error: NSError?) -> Void
 )
 ```
 - `itemId`: 구입 할 아이템 ID를 지정합니다. NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 아이템을 등록하면, 아이템 ID를 확인할 수 있습니다.
 - `qty`: 구입 수량을 지정합니다.
 - `handler`: 처리 완료 시 호출되는 핸들러입니다.
-  - [`NasWallPointInfo`](#-NasWallPointInfo): 구입 성공 시 구입 금액을 차감한 잔여 적립금 정보가 제공됩니다.
-  - `NSError`: 구입 실패 시 오류 정보가 제공됩니다.
+  - `pointInfo`: 구입 성공 시 구입 금액을 차감한 잔여 적립금 정보가 제공됩니다.
+  - `error`: 구입 실패 시 오류 정보가 제공됩니다.
 
 *사용 예시*
 ```swift

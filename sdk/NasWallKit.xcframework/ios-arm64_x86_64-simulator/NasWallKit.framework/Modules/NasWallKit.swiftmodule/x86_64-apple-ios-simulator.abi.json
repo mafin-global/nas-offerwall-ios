@@ -3564,6 +3564,7 @@
             "mangledName": "$s10NasWallKit0aB5ThemeO5lightyA2CmF",
             "moduleName": "NasWallKit",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 0
@@ -3605,6 +3606,7 @@
             "mangledName": "$s10NasWallKit0aB5ThemeO4darkyA2CmF",
             "moduleName": "NasWallKit",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 1
@@ -4131,28 +4133,28 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
       "kind": "IntegerLiteral",
-      "offset": 148,
+      "offset": 149,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
       "kind": "IntegerLiteral",
-      "offset": 177,
+      "offset": 179,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
       "kind": "IntegerLiteral",
-      "offset": 206,
+      "offset": 209,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdCategory.swift",
       "kind": "IntegerLiteral",
-      "offset": 235,
+      "offset": 239,
       "length": 1,
       "value": "5"
     },
@@ -4166,14 +4168,14 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdJoinStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 147,
+      "offset": 148,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdJoinStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 191,
+      "offset": 193,
       "length": 1,
       "value": "2"
     },
@@ -4187,28 +4189,28 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdListType.swift",
       "kind": "IntegerLiteral",
-      "offset": 175,
+      "offset": 176,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallAdListType.swift",
       "kind": "IntegerLiteral",
-      "offset": 219,
+      "offset": 221,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 55,
+      "offset": 79,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/@Public\/NasWallTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 73,
+      "offset": 119,
       "length": 1,
       "value": "1"
     },
@@ -4299,14 +4301,14 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiInit.swift",
       "kind": "Array",
-      "offset": 1461,
+      "offset": 1470,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiInit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1500,
+      "offset": 1509,
       "length": 5,
       "value": "false"
     },
@@ -4439,35 +4441,35 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 96,
+      "offset": 97,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 146,
+      "offset": 148,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 196,
+      "offset": 199,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 225,
+      "offset": 229,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdJoinLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 261,
+      "offset": 266,
       "length": 2,
       "value": "10"
     },
@@ -4481,42 +4483,42 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 100,
+      "offset": 101,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 139,
+      "offset": 141,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 168,
+      "offset": 171,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 197,
+      "offset": 201,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 250,
+      "offset": 255,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
-      "offset": 297,
+      "offset": 303,
       "length": 1,
       "value": "7"
     },
@@ -4530,63 +4532,63 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 124,
+      "offset": 125,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 182,
+      "offset": 184,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 251,
+      "offset": 254,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 307,
+      "offset": 311,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 337,
+      "offset": 342,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 380,
+      "offset": 386,
       "length": 2,
       "value": "42"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 410,
+      "offset": 417,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 477,
+      "offset": 485,
       "length": 2,
       "value": "61"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/AdTypeCharge.swift",
       "kind": "IntegerLiteral",
-      "offset": 541,
+      "offset": 550,
       "length": 2,
       "value": "71"
     },
@@ -4747,14 +4749,14 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 776,
+      "offset": 775,
       "length": 4,
       "value": "-114"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 804,
+      "offset": 803,
       "length": 4,
       "value": "-115"
     },
@@ -4768,77 +4770,77 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
       "kind": "IntegerLiteral",
-      "offset": 136,
+      "offset": 137,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
       "kind": "IntegerLiteral",
-      "offset": 175,
+      "offset": 177,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
       "kind": "IntegerLiteral",
-      "offset": 221,
+      "offset": 224,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
       "kind": "IntegerLiteral",
-      "offset": 265,
+      "offset": 269,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
       "kind": "IntegerLiteral",
-      "offset": 323,
+      "offset": 328,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/Market.swift",
       "kind": "IntegerLiteral",
-      "offset": 378,
+      "offset": 384,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
       "kind": "IntegerLiteral",
-      "offset": 45,
+      "offset": 68,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
       "kind": "IntegerLiteral",
-      "offset": 74,
+      "offset": 137,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
       "kind": "IntegerLiteral",
-      "offset": 103,
+      "offset": 209,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
       "kind": "IntegerLiteral",
-      "offset": 126,
+      "offset": 265,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Enums\/OfferWallType.swift",
       "kind": "IntegerLiteral",
-      "offset": 143,
+      "offset": 295,
       "length": 1,
       "value": "4"
     },
@@ -4866,14 +4868,14 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Extendsions\/Color.swift",
       "kind": "IntegerLiteral",
-      "offset": 74,
+      "offset": 207,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Extendsions\/Color.swift",
       "kind": "IntegerLiteral",
-      "offset": 355,
+      "offset": 698,
       "length": 1,
       "value": "1"
     },

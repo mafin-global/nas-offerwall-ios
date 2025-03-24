@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/NasWallKit-Swift.h</key>
 		<data>
-		2S60w9Tv+Xny18BMDf5arHPzmcI=
+		/7V6mCXcN/bEaQ21KPY1TMMZqro=
 		</data>
 		<key>Headers/NasWallKit.h</key>
 		<data>
@@ -42,23 +42,23 @@
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		G6GdM9+5v5PL5DnD5YiVimysvjQ=
+		HsqqxIowuLGQdkHJbsrZ0cI9oTQ=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		dNtn5Z0Plt7pZ2LO9XuuzX2dP4k=
+		3N34Fwj9DyaBB4rrTkTFEN41xGo=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		9FAhG4DaC0G6qi3I1a/8GkpY4XQ=
+		LDRAPr90lf9rMqawkBTQjcMVdEc=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		dNtn5Z0Plt7pZ2LO9XuuzX2dP4k=
+		3N34Fwj9DyaBB4rrTkTFEN41xGo=
 		</data>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ybi24fjeplWa/wBmpqQS5WV/MGg=
+		K3usmMpFXZ3nCNaU23W/DCgJm1Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DZh/6vJtolKhI5km+nTrar1GolFGCBcJMPxzqS4b3k8=
+			l5v4rOaW9VUGOCHqETj/B+ul2YpJvmO5UJL/MNRYJJs=
 			</data>
 		</dict>
 		<key>Headers/NasWallKit.h</key>
@@ -131,35 +131,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fTjIHeazKAqG8h6lI38NlwiGsvw8KmD6syTb1E6pC8w=
+			QIsYll+8CZuL68hc8ORI/GFsyt09vAMACv8DFk9sHJc=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bXnXr0wt3nPEIPOTR7XJ+n0UqnW5TNNEQc/62OM+WSA=
+			EtxJDDmhZWIu9KpEXTJLDvbo6eoZkT+Kzqs50IL1n7U=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0lXfN6E/VXsNQketKexSWDdREDfx5Z3EhlONuTgCa3w=
+			kc3c5jAunWTdt9uL+0LDlJUj4Hesi9fPM8QmYpcWEmM=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bXnXr0wt3nPEIPOTR7XJ+n0UqnW5TNNEQc/62OM+WSA=
+			EtxJDDmhZWIu9KpEXTJLDvbo6eoZkT+Kzqs50IL1n7U=
 			</data>
 		</dict>
 		<key>Modules/NasWallKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9al3n4lVg6FgjtOPocYAvxfJ25gPSQpMG52R9wnuwEE=
+			koHk4Le3tajJL+Ku3TDswLafkYJcKBLodG9Ei2LjrnY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -9,7 +9,7 @@ class NasWallKit_AdList: NasWallKit_Base<NasWallAdList> {
 
     // MARK: - Function
 
-    func loadData(_ listType: NasWallAdListType, animation: Animation? = nil, handler: (@MainActor (NSError?) -> Void)? = nil) {
+    func loadData(_ listType: NasWallAdListType, animation: Animation? = nil, handler: (@MainActor (_ error: NSError?) -> Void)? = nil) {
         loading(animation: animation)
 
         NasWall.adList(listType) { data, error in
