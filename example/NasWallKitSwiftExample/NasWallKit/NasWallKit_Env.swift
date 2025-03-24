@@ -12,17 +12,15 @@ enum NasWallKitServerType {
 ///
 /// 회원 로그인 시 `userData`, `userId` 값을 설정해주세요.
 class NasWallKit_Env {
-    static let shared = NasWallKit_Env()
-
     /// 테스트 모드 여부
     ///
     /// `true` 로 설정 시 테스트 광고가 표시됩니다.
-    let testMode: Bool = false
+    static let testMode: Bool = false
     
     /// 앱 KEY
     ///
     /// NAS 개발자 홈페이지의 "매체 관리" 메뉴에서 확인 가능합니다.
-    let appKey: String = ""
+    static let appKey: String = ""
 
     /// 적립금 관리 서버
     ///
@@ -30,7 +28,7 @@ class NasWallKit_Env {
     ///
     /// - .developer : 개발자 서버에서 적립금 관리
     /// - .nas : NAS 서버에서 적립금 관리
-    let serverType: NasWallKitServerType = .developer
+    static let serverType: NasWallKitServerType = .developer
 
     /// 회원 데이터
     ///
@@ -40,7 +38,7 @@ class NasWallKit_Env {
     /// 광고 참여 완료 시 개발자 서버로 콜백 호출될 때 함께 제공됩니다.
     ///
     /// - Important: 회원 로그인 시 값을 지정해주세요.
-    var userData: String = ""
+    static var userData: String = ""
 
     /// 회원 ID
     ///
@@ -49,5 +47,5 @@ class NasWallKit_Env {
     /// 회원 ID 등의 고유한 회원 정보를 지정합니다.
     ///
     /// - Important: 회원 로그인 시 값을 지정해주세요.
-    var userId: String = ""
+    static var userId: String = ""
 }

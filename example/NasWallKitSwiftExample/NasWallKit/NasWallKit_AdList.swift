@@ -5,7 +5,7 @@ import SwiftUI
 class NasWallKit_AdList: NasWallKit_Base<NasWallAdList> {
     // MARK: - Variable
 
-    @Published var listType: NasWallAdListType?
+    @Published private(set) var listType: NasWallAdListType?
 
     // MARK: - Function
 

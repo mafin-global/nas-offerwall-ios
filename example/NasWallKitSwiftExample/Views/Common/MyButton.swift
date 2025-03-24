@@ -27,7 +27,7 @@ import SwiftUI
  */
 struct MyButton: View {
     // MARK: - Variable
-
+    
     /// 레이블
     private var label: String
     /// 클릭 액션 핸들러
@@ -38,9 +38,9 @@ struct MyButton: View {
     private var labelColor: Color
     /// 로딩 여부
     private var loading: Bool
-
+    
     // MARK: - init
-
+    
     init(_ label: String, color: Color = .blue, labelColor: Color = .white, loading: Bool = false, action: (() -> Void)? = nil) {
         self.label = label
         self.color = color
@@ -48,9 +48,9 @@ struct MyButton: View {
         self.action = action
         self.loading = loading
     }
-
+    
     // MARK: - body
-
+    
     var body: some View {
         Button {
             if loading == false {
@@ -63,7 +63,7 @@ struct MyButton: View {
                         .controlSize(.small)
                         .tint(.white)
                 }
-
+                
                 Text(label)
                     .font(.subheadline.weight(.semibold))
             }
@@ -78,9 +78,9 @@ struct MyButton: View {
 
 /// 기본 버튼 스타일
 private struct MyButtonStyle: ButtonStyle {
-    var color: Color
-    var labelColor: Color
-
+    private(set) var color: Color
+    private(set) var labelColor: Color
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
@@ -101,7 +101,7 @@ private struct MyButtonStyle: ButtonStyle {
             MyButton("Button") {
                 ll("Button pressed")
             }
-
+            
             MyButton("Button", loading: true) {
                 ll("Button pressed")
             }
