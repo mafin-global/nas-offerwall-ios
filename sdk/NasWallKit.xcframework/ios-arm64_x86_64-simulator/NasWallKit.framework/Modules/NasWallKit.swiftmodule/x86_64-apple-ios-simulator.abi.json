@@ -4245,21 +4245,21 @@
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
       "kind": "IntegerLiteral",
-      "offset": 818,
+      "offset": 870,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
       "kind": "BooleanLiteral",
-      "offset": 910,
+      "offset": 962,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/Api.swift",
       "kind": "BooleanLiteral",
-      "offset": 972,
+      "offset": 1024,
       "length": 5,
       "value": "false"
     },
@@ -4292,13 +4292,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiAdListMoney.swift",
-      "kind": "BooleanLiteral",
-      "offset": 148,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiInit.swift",
       "kind": "Array",
       "offset": 1470,
@@ -4323,6 +4316,13 @@
       "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiPurchaseItem.swift",
       "kind": "BooleanLiteral",
       "offset": 175,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/youngchulpark\/@Project\/nas\/nas-offerwall-sdk-ios\/NasWallKit\/Api\/ApiTotalPoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 148,
       "length": 5,
       "value": "false"
     },
