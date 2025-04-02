@@ -27,8 +27,6 @@ struct ContentView: View {
         nwkInitialize.loadData { error in
             if error == nil {
                 lls("NAS SDK 초기화 성공")
-                loadTotalPoint()
-                loadUserPoint()
             } else {
                 lle("NAS SDK 초기화 실패", error: error!)
             }
@@ -117,7 +115,9 @@ struct ContentView: View {
                     Section {
                         ListValue("획득 가능 총 적립금", icon: "wonsign", color: .cyan) {
                             switch nwkTotalPoint.status {
-                            case .idle, .loading:
+                            case .idle:
+                                Button("조회") { loadTotalPoint() }
+                            case .loading:
                                 ProgressView()
                             case .fail:
                                 Button("재시도") { loadTotalPoint() }
@@ -158,7 +158,9 @@ struct ContentView: View {
                         Section(header: Text("적립금")) {
                             ListValue("보유 적립금", icon: "wonsign", color: .purple.opacity(0.7)) {
                                 switch nwkUserPoint.status {
-                                case .idle, .loading:
+                                case .idle:
+                                    Button("조회") { loadUserPoint() }
+                                case .loading:
                                     ProgressView()
                                 case .fail:
                                     Button("재시도") { loadUserPoint() }
