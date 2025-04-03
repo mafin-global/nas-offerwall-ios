@@ -81,11 +81,10 @@ struct ContentView: View {
                 DisclosureGroup(isExpanded: $isSettingsExpanded) {
                     SettingsListItem(title: "앱 KEY", value: NasWallKit_Env.appKey)
                     SettingsListItem(title: "적립금 관리 서버", value: NasWallKit_Env.serverType == .developer ? "개발자 서버" : "NAS 서버")
-                    SettingsListItem(title: "회원 데이터", value: NasWallKit_Env.userData)
-                    
                     if NasWallKit_Env.serverType == .nas {
-                        // NAS 서버에서 적립금 관리하는 경우 회원 ID 표시
                         SettingsListItem(title: "회원 ID", value: NasWallKit_Env.userId)
+                    } else {
+                        SettingsListItem(title: "회원 데이터", value: NasWallKit_Env.userData)
                     }
                 } label: {
                     Label("설정 정보 (\(NasWallKit_Env.testMode ? "테스트 모드" : "라이브 모드"))", systemImage: "gearshape.fill")
