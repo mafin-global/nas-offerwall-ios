@@ -72,7 +72,7 @@ struct CustomOfferWallView_AdDetail: View {
 
                         // 적립 적립금
                         Text("\(info.rewardPrice)\(info.rewardUnit) 적립")
-                            .font(.system(size: 14, weight: .semibold))
+                            .font(.footnote.weight(.semibold))
                             .foregroundStyle(.blue)
                     }
 
