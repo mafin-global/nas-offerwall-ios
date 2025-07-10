@@ -8,6 +8,9 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 - [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
 
 ## 📝 업데이트
+- `v2.0.2`
+  - 특정 상황에서 앱이 종료되는 오류가 수정되었습니다.
+
 - `v2.0.1`
   - 특정 상황에서 광고 참여 완료가 정상적으로 되지 않는 오류가 수정되었습니다.
 
