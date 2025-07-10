@@ -521,9 +521,9 @@ enum NasWallTheme: Int {
 ```
 
 ## 📖 다른 문서
-- [`내장 UI 개발 가이드`](Guide.Embed.md) : 미리 만들어진 UI를 사용하는 방식으로, 별도의 UI 개발 없이 쉽게 연동할 수 있습니다.
-- [`업데이트`](Update.md) : SDK 업데이트 정보를 제공합니다.
+- [내장 UI 개발 가이드](Guide.Embed.md) : 미리 만들어진 UI를 사용하는 방식으로, 별도의 UI 개발 없이 쉽게 연동할 수 있습니다.
 
 ## 🔗 다른 플렛폼 SDK
-- [`Android SDK`](https://github.com/mafin-global/nas-offerwall-android)
-- [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
+- [Android SDK](https://github.com/mafin-global/nas-offerwall-android)
+- [React Native SDK](https://github.com/mafin-global/nas-offerwall-react-native)
+- [Unity SDK](https://github.com/mafin-global/nas-offerwall-unity)

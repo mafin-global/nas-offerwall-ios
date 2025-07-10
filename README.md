@@ -4,8 +4,9 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 ![](/docs/img/popup_offerwall.png) ![](/docs/img/example_app.png)
 
 ## 🔗 다른 플렛폼 SDK
-- [`Android SDK`](https://github.com/mafin-global/nas-offerwall-android)
-- [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
+- [Android SDK](https://github.com/mafin-global/nas-offerwall-android)
+- [React Native SDK](https://github.com/mafin-global/nas-offerwall-react-native)
+- [Unity SDK](https://github.com/mafin-global/nas-offerwall-unity)
 
 ## 📝 업데이트
 - `v2.0.2`
@@ -28,5 +29,5 @@ NAS 오퍼월 iOS용 SDK 및 예제 프로그램을 제공합니다.
 - [개발자 정의 UI 개발 가이드](docs/Guide.Custom.md) : 개발자가 UI를 직접 만들어서 연동할 수 있는 방식으로, 개발자 앱의 UI에 맞게 자유롭게 구성할 수 있습니다.
 
 ## 📦 파일
-- [`/sdk`](sdk) : 최종 버전 SDK
-- [`/example`](example) : 예제 프로그램 소스
+- [/sdk](sdk) : 최종 버전 SDK
+- [/example](example) : 예제 프로그램 소스

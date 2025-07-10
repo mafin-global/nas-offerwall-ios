@@ -469,9 +469,9 @@ enum NasWallTheme: Int {
 ```
 
 ## 📖 다른 문서
-- [`개발자 정의 UI 개발 가이드`](Guide.Custom.md) : 개발자가 UI를 직접 만들어서 연동할 수 있는 방식으로, 개발자 앱의 UI에 맞게 자유롭게 구성할 수 있습니다.
-- [`업데이트`](Update.md) : SDK 업데이트 정보를 제공합니다.
+- [개발자 정의 UI 개발 가이드](Guide.Custom.md) : 개발자가 UI를 직접 만들어서 연동할 수 있는 방식으로, 개발자 앱의 UI에 맞게 자유롭게 구성할 수 있습니다.
 
 ## 🔗 다른 플렛폼 SDK
-- [`Android SDK`](https://github.com/mafin-global/nas-offerwall-android)
-- [`Unity SDK`](https://github.com/mafin-global/nas-offerwall-unity)
+- [Android SDK](https://github.com/mafin-global/nas-offerwall-android)
+- [React Native SDK](https://github.com/mafin-global/nas-offerwall-react-native)
+- [Unity SDK](https://github.com/mafin-global/nas-offerwall-unity)
