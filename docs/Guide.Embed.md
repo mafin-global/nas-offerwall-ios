@@ -171,6 +171,8 @@ NasWall.initialize("32자리 앱 KEY", userId: "회원 ID", testMode: false) { e
 ### 🔹 *팝업 오퍼월*
 팝업 오퍼월(전체 화면)을 표시합니다.
 
+*❗ 시뮬레이터에서는 광고주 식별자(IDFA) 값이 없기 때문에 참여 시 오류가 발생합니다.*
+
 ```swift
 func openPopupOfferWall(
     _ handler: @MainActor @escaping (_ error: NSError?) - Void,
@@ -196,6 +198,8 @@ NasWall.openPopupOfferWall { error in
 ```
 ### 🔹 *임베드 오퍼월*
 제공된 `UIView`에 임베드 오퍼월을 표시합니다.
+
+*❗ 시뮬레이터에서는 광고주 식별자(IDFA) 값이 없기 때문에 참여 시 오류가 발생합니다.*
 
 ```swift
 func openPopupOfferWall(
